@@ -8,6 +8,7 @@ import { StatisticSection } from "./_sections/statistic-section";
 import { ClientSection } from "./_sections/client-section";
 import { TestimonySection } from "./_sections/testimony-section";
 import { MapSection } from "./_sections/map-section";
+import { CtaSection } from "./_sections/cta-section";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <ClientSection />
       <TestimonySection />
       <MapSection />
+      <CtaSection />
     </main>
   );
 }
