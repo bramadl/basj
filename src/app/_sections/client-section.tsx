@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { FC } from "react";
+import { motion } from "framer-motion";
 
 export const ClientSection: FC = () => {
   return (
@@ -7,7 +10,13 @@ export const ClientSection: FC = () => {
       id="client"
       className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-12 md:gap-[72px] self-stretch py-[72px] md:py-[100px] px-8 md:px-[160px] bg-shades-gray-10"
     >
-      <div className="flex flex-col items-center gap-6 self-stretch md:max-w-[502px]">
+      <motion.div
+        className="flex flex-col items-center gap-6 self-stretch md:max-w-[502px]"
+        initial={{ opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 0.8 }}
+        viewport={{ margin: "-100px" }}
+        whileInView={{ opacity: 1 }}
+      >
         <h2 className="text-mobile-h4-400 md:text-desktop-h4-400">
           Our solutions are recognized by{" "}
           <strong className="text-mobile-h4-700 md:text-desktop-h4-700">
@@ -19,8 +28,14 @@ export const ClientSection: FC = () => {
           on people and the planet. We are certified to meet high standards of
           social and environmental performance.
         </p>
-      </div>
-      <div className="flex items-center justify-center gap-x-14 gap-y-8 flex-wrap">
+      </motion.div>
+      <motion.div
+        className="flex items-center justify-center gap-x-14 gap-y-8 flex-wrap"
+        initial={{ opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 0.8 }}
+        viewport={{ margin: "-100px" }}
+        whileInView={{ opacity: 1 }}
+      >
         <Image
           alt="Bureau veritas"
           className="grayscale"
@@ -42,7 +57,7 @@ export const ClientSection: FC = () => {
           width={188.67}
           height={80}
         />
-      </div>
+      </motion.div>
     </section>
   );
 };

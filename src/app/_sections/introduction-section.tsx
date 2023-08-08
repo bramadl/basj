@@ -1,7 +1,10 @@
+"use client";
+
 import { Button } from "@basj/components/core/button/Button";
 
 import Image from "next/image";
 import { FC } from "react";
+import { motion } from "framer-motion";
 
 export const IntroductionSection: FC = () => {
   return (
@@ -9,7 +12,13 @@ export const IntroductionSection: FC = () => {
       id="introduction"
       className="flex flex-col md:flex-row items-start md:items-center justify-center md:justify-between gap-12 md:gap-[120px] self-stretch md:self-auto py-[72px] px-8 md:py-[100px] md:px-[160px] bg-shades-gray-10"
     >
-      <div className="relative flex-shrink-0 w-full md:w-[568px] h-[188.669px] md:h-[367px]">
+      <motion.div
+        initial={{ opacity: 0 }}
+        className="relative flex-shrink-0 w-full md:w-[568px] h-[188.669px] md:h-[367px]"
+        transition={{ ease: "easeOut", duration: 0.8 }}
+        viewport={{ margin: "-100px" }}
+        whileInView={{ opacity: 1 }}
+      >
         <Image
           alt="Thumbnail"
           className="rounded-xl object-cover"
@@ -19,8 +28,14 @@ export const IntroductionSection: FC = () => {
           }
         />
         <i className="bx bx-play-circle bx-md md:bx-lg absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-primary-white" />
-      </div>
-      <article className="flex flex-col items-start justify-center gap-6 self-stretch">
+      </motion.div>
+      <motion.article
+        initial={{ opacity: 0 }}
+        className="flex flex-col items-start justify-center gap-6 self-stretch"
+        transition={{ ease: "easeOut", duration: 0.8 }}
+        viewport={{ margin: "-100px" }}
+        whileInView={{ opacity: 1 }}
+      >
         <h2 className="text-mobile-h2-400 md:text-desktop-h4-400">
           Since 2015, we&apos;ve been committed to preserving nature through
           produce{" "}
@@ -35,7 +50,7 @@ export const IntroductionSection: FC = () => {
           to creating the most exceptional quality wood pellets worldwide.
         </p>
         <Button icon>Learn more</Button>
-      </article>
+      </motion.article>
     </section>
   );
 };
