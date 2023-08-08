@@ -16,7 +16,7 @@ export const ProductCard: FC<ProductCardProps> = ({
       <figure className="relative w-full h-full overflow-hidden rounded-[20px] group">
         <Image
           alt="image"
-          className="object-cover group-hover:scale-125 transition-transform ease-out duration-300"
+          className="object-cover group-hover:scale-125 rounded-[20px] transition-transform ease-out duration-300"
           fill
           src={image}
         />
