@@ -7,6 +7,7 @@ import { ProductSection } from "./_sections/product-section";
 import { StatisticSection } from "./_sections/statistic-section";
 import { ClientSection } from "./_sections/client-section";
 import { TestimonySection } from "./_sections/testimony-section";
+import { MapSection } from "./_sections/map-section";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <StatisticSection />
       <ClientSection />
       <TestimonySection />
+      <MapSection />
     </main>
   );
 }
