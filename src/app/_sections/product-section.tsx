@@ -24,7 +24,7 @@ export const ProductSection: FC = () => {
         />
       </div>
       <div className="flex flex-col justify-center items-center md:items-start gap-6 md:gap-8 self-stretch">
-        <h3 className="text-mobile-h4-700 md:text-desktop-h4-400">
+        <h3 className="text-mobile-h4-700 md:text-desktop-h4-700">
           We also provide another products
         </h3>
         <ProductSwiper />

@@ -5,6 +5,7 @@ import { IntroductionSection } from "./_sections/introduction-section";
 import { BenefitSection } from "./_sections/benefit-section";
 import { ProductSection } from "./_sections/product-section";
 import { TestimonialSection } from "./_sections/testimonial-section";
+import { ClientSection } from "./_sections/client-section";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <BenefitSection />
       <ProductSection />
       <TestimonialSection />
+      <ClientSection />
     </main>
   );
 }
