@@ -32,7 +32,7 @@ const config: Config = {
           20: "#efefef",
           30: "#cccccc",
           40: "#8d9091",
-          50: "#8d9091",
+          50: "#626465",
         },
       },
       tones: {
