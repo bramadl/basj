@@ -13,6 +13,7 @@ export const Button: FC<ButtonProps> = ({
   ...props
 }) => {
   const buttonClass = [
+    props.className,
     size === "base"
       ? "text-mobile-b1-700 md:text-desktop-b1-700"
       : "text-mobile-b2-700 md:text-desktop-b2-700",
