@@ -24,7 +24,7 @@ export const MapSection: FC = () => {
         </p>
       </div>
       <div className="border-t md:border-r md:border-t-0 border-shades-gray-40 self-stretch md:self-center h-px md:h-[365px] md:w-px" />
-      <Image alt="map" src={MapPNG} />
+      <Image alt="map" src={MapPNG} width={560} />
     </section>
   );
 };

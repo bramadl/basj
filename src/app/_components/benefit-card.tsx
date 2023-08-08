@@ -9,7 +9,7 @@ interface BenefitCardProps {
 
 export const BenefitCard: FC<BenefitCardProps> = ({ description, image, title }) => {
   return (
-    <div className="md:flex-1 flex flex-col justify-center items-start gap-7 self-stretch">
+    <div className="md:flex-1 flex flex-col justify-center md:justify-start items-start gap-7 self-stretch">
       <div className="flex p-2 justify-center items-center gap-2.5 rounded-lg bg-primary-bold-amber">
         <Image alt="enery" src={image} />
       </div>

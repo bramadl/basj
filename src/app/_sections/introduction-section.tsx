@@ -9,7 +9,7 @@ export const IntroductionSection: FC = () => {
       id="introduction"
       className="flex flex-col md:flex-row items-start md:items-center justify-center md:justify-between gap-12 md:gap-[120px] self-stretch md:self-auto py-[72px] px-8 md:py-[100px] md:px-[120px] bg-shades-gray-10"
     >
-      <div className="relative flex-shrink-0 w-[296px] md:w-[568px] h-[188.669px] md:h-[367px]">
+      <div className="relative flex-shrink-0 w-full md:w-[568px] h-[188.669px] md:h-[367px]">
         <Image
           alt="Thumbnail"
           className="rounded-xl object-cover"
@@ -18,7 +18,7 @@ export const IntroductionSection: FC = () => {
             "https://s3-alpha-sig.figma.com/img/4896/0fe4/d30fb58e74cf78f249818e733af1fc59?Expires=1692576000&Signature=Xd5zgWmeCZq3by4ariDB-rzSkahAd7WT-TQ6gUtqq6sQId-s88fzo7ABfJ7Qk9GXDVdfZ5EKwXAaeS~QkC-dchDYNISaKqko100RqlmaHb2cp4DzR3VJzdVGA41xtSFHjsozAheufFXP1KyihOOSMRyeUl32KGw7yE9rs7E-XuYbJnPrqF3qrZw02zGY08jqZQj4efWtiNs1JOyJSmMg985-nX3h1A-dRRan-FqRnd4TJM7Cp7qYcuulwUlX8g1ryuRu-mdGyhRTFUtMny4mPBCliipaHmudmqEhU00GcdGRVEdHIwpKHkSJIMKbumSq14jBis9eHfks8wXLmDq8Zw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
           }
         />
-        <i className="bx bx-play-circle bx-md absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-primary-white" />
+        <i className="bx bx-play-circle bx-md md:bx-lg absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-primary-white" />
       </div>
       <article className="flex flex-col items-start justify-center gap-6 self-stretch">
         <h2 className="text-mobile-h2-400 md:text-desktop-h4-400">

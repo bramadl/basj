@@ -5,7 +5,7 @@ import { montserratFont } from "@basj/common/fonts/montserrat.font";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkah Agung Sejahtera",
+  title: "Berkah Agung Semesta Jaya",
   description: "Hello world.",
 };
 
