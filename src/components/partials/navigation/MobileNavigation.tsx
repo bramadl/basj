@@ -1,6 +1,6 @@
 import { Logo } from "@basj/components/core/logo/Logo";
 
-import React, { FC } from "react";
+import { FC } from "react";
 import Link from "next/link";
 
 import { MobileMenu } from "./MobileMenu";

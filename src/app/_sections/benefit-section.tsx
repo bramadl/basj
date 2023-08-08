@@ -3,7 +3,7 @@ import LeafSVG from "@basj/assets/images/svg/leaf.svg";
 import MoneySVG from "@basj/assets/images/svg/money.svg";
 import { Callout } from "@basj/components/core/callout/Callout";
 
-import React, { FC } from "react";
+import { FC } from "react";
 
 import { BenefitCard } from "../_components/benefit-card";
 

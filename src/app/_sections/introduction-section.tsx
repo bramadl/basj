@@ -1,9 +1,9 @@
 import { Button } from "@basj/components/core/button/Button";
 
 import Image from "next/image";
-import React from "react";
+import { FC } from "react";
 
-export const IntroductionSection = () => {
+export const IntroductionSection: FC = () => {
   return (
     <section
       id="introduction"

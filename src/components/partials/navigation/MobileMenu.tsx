@@ -4,7 +4,7 @@ import { Button } from "@basj/components/core/button/Button";
 import { Logo } from "@basj/components/core/logo/Logo";
 
 import Link from "next/link";
-import React, { FC, Fragment, useState } from "react";
+import { FC, Fragment, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { links } from "./links";

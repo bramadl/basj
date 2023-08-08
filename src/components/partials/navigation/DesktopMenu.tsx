@@ -1,7 +1,7 @@
 import { Button } from "@basj/components/core/button/Button";
 
 import Link from "next/link";
-import React, { FC } from "react";
+import { FC } from "react";
 
 import { links } from "./links";
 

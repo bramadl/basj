@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from "react";
+import { FC, Fragment } from "react";
 
 import { DesktopNavigation } from "./DesktopNavigation";
 import { MobileNavigation } from "./MobileNavigation";

@@ -1,4 +1,4 @@
-import React, { BaseHTMLAttributes, FC } from "react";
+import { BaseHTMLAttributes, FC } from "react";
 
 export interface CalloutProps extends BaseHTMLAttributes<HTMLDivElement> {}
 

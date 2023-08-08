@@ -1,6 +1,6 @@
 import { Button } from "@basj/components/core/button/Button";
 
-import React, { FC } from "react";
+import { FC } from "react";
 
 export const HeroSection: FC = () => {
   return (
