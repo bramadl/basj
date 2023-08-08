@@ -1,3 +1,4 @@
+import { Footer } from "@basj/components/partials/footer/Footer";
 import { Navigation } from "@basj/components/partials/navigation/Navigation";
 
 import { HeroSection } from "./_sections/hero-section";
@@ -23,6 +24,7 @@ export default function Home() {
       <TestimonySection />
       <MapSection />
       <CtaSection />
+      <Footer />
     </main>
   );
 }
