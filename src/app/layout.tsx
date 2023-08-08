@@ -1,5 +1,6 @@
 import "@basj/assets/styles/globals.css";
 import { kollektifFont } from "@basj/common/fonts/kollektif.font";
+import { montserratFont } from "@basj/common/fonts/montserrat.font";
 
 import type { Metadata } from "next";
 
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html className={montserratFont.className} lang="en">
       <head>
         <link
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
