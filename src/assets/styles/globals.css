@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply antialiased text-primary-dark bg-primary-white text-mobile-b1-400 md:text-desktop-b1-400;
+  }
+}
