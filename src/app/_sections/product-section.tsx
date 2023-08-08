@@ -6,7 +6,7 @@ export const ProductSection: FC = () => {
   return (
     <section
       id="product"
-      className="flex py-[72px] md:py-[100px] px-8 md:px-[120px] flex-col items-start gap-[72px] self-stretch bg-shades-gray-10"
+      className="flex py-[72px] md:py-[100px] px-8 md:px-[160px] flex-col items-start gap-[72px] self-stretch bg-shades-gray-10"
     >
       <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-6 md:gap-[72px] self-stretch">
         <h2 className="text-mobile-h2-400 md:text-desktop-h2-400">

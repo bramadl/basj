@@ -5,7 +5,7 @@ export const CtaSection: FC = () => {
   return (
     <section
       id="cta"
-      className="flex py-[72px] px-8 md:py-[100px] md:px-[120px] flex-col justify-center items-center self-stretch"
+      className="flex py-[72px] px-8 md:py-[100px] md:px-[160px] flex-col justify-center items-center self-stretch"
       style={{
         background:
           "url(https://s3-alpha-sig.figma.com/img/a09d/8b59/72ec71f3f0c4f62751809df7e77f1b6c?Expires=1692576000&Signature=RGHaMGOf8TbBxwLK7qNFN5fgF6WGAivN2W8xOjKc9Zqc2z5K7LplJ6AoPtoLsS5yV379meHPRJKtf81M6EeQ2sRGn73pGRoh7ECf8jkLklCWm2KexiCimCJO3uZCIvw2tz5vrjaYCiFLAktOelyBUHZf-8MhvNIVmLRKArsBTfTdWklD2I7f9IitoUYApyQ0lFDVnyxYfKqCE3QGlpiTm5n4wglyLZh64unQXCOXXw-xi~hzkuGKwNJso0JBEUOSXXY~Yd2Ddb8LCE0B8puSpKfaY7zl0MJ~2zIQAkpA8C5j6CN0JjO9RH7S-MSNOvDCRikHldD8rUWGD5AzS7GJ7g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4) center center/cover",

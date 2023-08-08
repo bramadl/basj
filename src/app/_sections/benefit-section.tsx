@@ -11,7 +11,7 @@ export const BenefitSection: FC = () => {
   return (
     <section
       id="benefits"
-      className="flex flex-col items-start gap-12 md:gap-[72px] self-stretch py-[72px] md:py-[100px] px-8 md:px-[120px] bg-shades-gray-10"
+      className="flex flex-col items-start gap-12 md:gap-[72px] self-stretch py-[72px] md:py-[100px] px-8 md:px-[160px] bg-shades-gray-10"
     >
       <h2 className="text-center text-mobile-h2-400 md:text-desktop-h2-400 self-stretch">
         Wood Pellets,{" "}

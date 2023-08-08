@@ -5,7 +5,7 @@ export const ClientSection: FC = () => {
   return (
     <section
       id="client"
-      className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-12 md:gap-[72px] self-stretch py-[72px] md:py-[100px] px-8 md:px-[120px] bg-shades-gray-10"
+      className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-12 md:gap-[72px] self-stretch py-[72px] md:py-[100px] px-8 md:px-[160px] bg-shades-gray-10"
     >
       <div className="flex flex-col items-center gap-6 self-stretch md:max-w-[502px]">
         <h2 className="text-mobile-h4-400 md:text-desktop-h4-400">

@@ -7,7 +7,7 @@ export const IntroductionSection: FC = () => {
   return (
     <section
       id="introduction"
-      className="flex flex-col md:flex-row items-start md:items-center justify-center md:justify-between gap-12 md:gap-[120px] self-stretch md:self-auto py-[72px] px-8 md:py-[100px] md:px-[120px] bg-shades-gray-10"
+      className="flex flex-col md:flex-row items-start md:items-center justify-center md:justify-between gap-12 md:gap-[120px] self-stretch md:self-auto py-[72px] px-8 md:py-[100px] md:px-[160px] bg-shades-gray-10"
     >
       <div className="relative flex-shrink-0 w-full md:w-[568px] h-[188.669px] md:h-[367px]">
         <Image

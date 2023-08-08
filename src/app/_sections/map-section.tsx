@@ -7,7 +7,7 @@ export const MapSection: FC = () => {
   return (
     <section
       id="map"
-      className="flex py-[72px] md:py-[100px] px-8 md:px-[120px] flex-col md:flex-row items-start md:items-center gap-[48px] md:gap-[72px] self-stretch bg-shades-gray-10"
+      className="flex py-[72px] md:py-[100px] px-8 md:px-[160px] flex-col md:flex-row items-start md:items-center gap-[48px] md:gap-[72px] self-stretch bg-shades-gray-10"
     >
       <div className="flex flex-col items-center justify-center gap-5 self-stretch">
         <h2 className="text-mobile-h3-400 md:text-desktop-h3-400">
