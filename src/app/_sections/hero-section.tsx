@@ -15,6 +15,7 @@ export const HeroSection: FC = () => {
         animate={{ opacity: 1 }}
         className="w-[360px] md:w-[640px] flex flex-col items-center justify-center gap-8 py-16 px-8 md:p-0 mt-5 md:mt-8"
         initial={{ opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 0.8 }}
       >
         <h1 className="text-mobile-h1-400 md:text-desktop-h1-400 text-primary-white text-center">
           Unlock the full power of wood pellet{" "}
