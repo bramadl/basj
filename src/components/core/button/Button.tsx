@@ -26,7 +26,7 @@ export const Button: FC<ButtonProps> = ({
         ]
       : [
           icon
-            ? "text-primary-forest-green"
+            ? "text-primary-dark hover:text-primary-forest-green"
             : "bg-primary-forest-green hover:bg-primary-dark-forest-green text-primary-white",
         ]),
     icon ? "gap-2" : "gap-[10px]",
@@ -35,7 +35,7 @@ export const Button: FC<ButtonProps> = ({
 
   if (typeof icon === "boolean") {
     icon = (
-      <i className="bx bx-sm bx-right-arrow-alt group-hover:translate-x-2 transition-transform ease-out duration-300" />
+      <i className="bx bx-sm bx-right-arrow-alt text-primary-forest-green group-hover:translate-x-2 transition-transform ease-out duration-300" />
     );
   }
 
