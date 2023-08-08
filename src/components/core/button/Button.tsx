@@ -26,7 +26,7 @@ export const Button: FC<ButtonProps> = ({
       : [
           icon
             ? "text-primary-forest-green"
-            : "border border-primary-forest-green bg-primary-forest-green hover:bg-primary-dark-forest-green text-primary-white",
+            : "bg-primary-forest-green hover:bg-primary-dark-forest-green text-primary-white",
         ]),
     icon ? "gap-2" : "gap-[10px]",
     "group flex items-center justify-center gap-[10px] rounded-[32px] uppercase transition-colors ease-out duration-300",
