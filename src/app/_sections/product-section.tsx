@@ -15,7 +15,13 @@ export const ProductSection: FC = () => {
             We make them happen.
           </strong>
         </h2>
-        <ProductCard className="h-[352px]" />
+        <ProductCard
+          caption="Wood pellet"
+          className="h-[352px]"
+          image={
+            "https://s3-alpha-sig.figma.com/img/4896/0fe4/d30fb58e74cf78f249818e733af1fc59?Expires=1692576000&Signature=Xd5zgWmeCZq3by4ariDB-rzSkahAd7WT-TQ6gUtqq6sQId-s88fzo7ABfJ7Qk9GXDVdfZ5EKwXAaeS~QkC-dchDYNISaKqko100RqlmaHb2cp4DzR3VJzdVGA41xtSFHjsozAheufFXP1KyihOOSMRyeUl32KGw7yE9rs7E-XuYbJnPrqF3qrZw02zGY08jqZQj4efWtiNs1JOyJSmMg985-nX3h1A-dRRan-FqRnd4TJM7Cp7qYcuulwUlX8g1ryuRu-mdGyhRTFUtMny4mPBCliipaHmudmqEhU00GcdGRVEdHIwpKHkSJIMKbumSq14jBis9eHfks8wXLmDq8Zw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          }
+        />
       </div>
       <div className="flex flex-col justify-center items-center md:items-start gap-6 md:gap-8 self-stretch">
         <h3 className="text-mobile-h4-700 md:text-desktop-h4-400">
