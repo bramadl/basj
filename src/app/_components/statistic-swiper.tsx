@@ -4,8 +4,8 @@ import { Swiper } from "@basj/components/core/swiper/Swiper";
 
 import { FC } from "react";
 
-export const TestimonySwiper: FC = () => {
-  const testimonies = [
+export const StatisticSwiper: FC = () => {
+  const statistics = [
     {
       year: 2023,
       amount: "45+",
@@ -36,16 +36,16 @@ export const TestimonySwiper: FC = () => {
           spaceBetween: 24,
         },
       }}
-      items={testimonies}
+      items={statistics}
       slidesPerView={1}
       spaceBetween={24}
     >
-      {(testimony) => (
+      {(statistic) => (
         <article className="flex p-8 flex-col items-start gap-6 self-stretch rounded-xl bg-primary-dark-forest-green text-primary-white">
-          <p className="text-mobile-h5-400 md:text-desktop-h5-400">{testimony.year}</p>
+          <p className="text-mobile-h5-400 md:text-desktop-h5-400">{statistic.year}</p>
           <section className="flex items-center gap-4">
-            <p className="text-mobile-h1-400 md:text-desktop-h1-400">{testimony.amount}</p>
-            <h3 className="text-mobile-h5-400 md:text-desktop-h5-400">{testimony.label}</h3>
+            <p className="text-mobile-h1-400 md:text-desktop-h1-400">{statistic.amount}</p>
+            <h3 className="text-mobile-h5-400 md:text-desktop-h5-400">{statistic.label}</h3>
           </section>
         </article>
       )}

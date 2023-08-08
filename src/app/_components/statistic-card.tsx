@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-interface TestimonyCardProps {
+interface StatisticCardProps {
   variant: "white" | "primary";
 }
 
-export const TestimonyCard: FC<TestimonyCardProps> = ({ variant }) => {
+export const StatisticCard: FC<StatisticCardProps> = ({ variant }) => {
   return (
     <article
       className={`flex p-6 flex-col items-start gap-5 self-stretch rounded-xl ${
