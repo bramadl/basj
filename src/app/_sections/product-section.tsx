@@ -15,7 +15,7 @@ export const ProductSection: FC = () => {
       <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-6 md:gap-[72px] self-stretch">
         <motion.h2
           initial={{ opacity: 0 }}
-          className="text-mobile-h2-400 md:text-desktop-h2-400"
+          className="md:flex-1 text-mobile-h2-400 md:text-desktop-h2-400"
           transition={{ ease: "easeOut", duration: 0.8 }}
           viewport={{ margin: "-100px" }}
           whileInView={{ opacity: 1 }}
@@ -26,6 +26,7 @@ export const ProductSection: FC = () => {
           </strong>
         </motion.h2>
         <motion.div
+          className="w-full md:w-auto md:flex-1"
           initial={{ opacity: 0 }}
           transition={{ ease: "easeOut", duration: 0.8 }}
           viewport={{ margin: "-100px" }}
