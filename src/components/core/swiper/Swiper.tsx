@@ -34,7 +34,7 @@ export const Swiper: FC<SwiperProps> = ({ children, items, ...props }) => {
         <SwiperSlide key={key}>{children(item)}</SwiperSlide>
       ))}
       <div
-        className="md:hidden flex justify-center items-center gap-2 mt-6"
+        className="lg:hidden flex justify-center items-center gap-2 mt-6"
         slot="container-end"
       >
         {items.map((_, key) => (

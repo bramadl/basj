@@ -8,7 +8,7 @@ export const ClientSection: FC = () => {
   return (
     <section
       id="client"
-      className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-12 md:gap-[72px] self-stretch py-[72px] md:py-[100px] px-8 md:px-[160px] bg-shades-gray-10"
+      className="flex flex-col lg:flex-row items-start lg:items-center lg:justify-between gap-12 md:gap-20 xl:gap-[72px] self-stretch py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] bg-shades-gray-10"
     >
       <motion.div
         className="flex flex-col items-center gap-6 self-stretch md:max-w-[502px]"
@@ -30,7 +30,7 @@ export const ClientSection: FC = () => {
         </p>
       </motion.div>
       <motion.div
-        className="flex items-center justify-center gap-x-14 gap-y-8 flex-wrap"
+        className="flex md:grid lg:flex md:grid-cols-3 items-center justify-center gap-x-14 gap-y-8 flex-wrap"
         initial={{ opacity: 0 }}
         transition={{ ease: "easeOut", duration: 0.8 }}
         viewport={{ margin: "-100px" }}

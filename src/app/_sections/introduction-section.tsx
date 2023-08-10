@@ -10,11 +10,11 @@ export const IntroductionSection: FC = () => {
   return (
     <section
       id="introduction"
-      className="flex flex-col md:flex-row items-start md:items-center justify-center md:justify-between gap-12 md:gap-[120px] self-stretch md:self-auto py-[72px] px-8 md:py-[100px] md:px-[160px] bg-shades-gray-10"
+      className="flex flex-col lg:flex-row items-start md:items-center justify-center md:justify-between gap-12 md:gap-20 xl:gap-[120px] self-stretch md:self-auto py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] bg-shades-gray-10"
     >
       <motion.div
         initial={{ opacity: 0 }}
-        className="relative flex-shrink-0 w-full md:w-auto md:flex-1 h-[188.669px] md:h-[367px]"
+        className="relative flex-shrink-0 w-full lg:w-auto lg:flex-1 h-[188.669px] md:h-[367px]"
         transition={{ ease: "easeOut", duration: 0.8 }}
         viewport={{ margin: "-100px" }}
         whileInView={{ opacity: 1 }}
@@ -36,10 +36,10 @@ export const IntroductionSection: FC = () => {
         viewport={{ margin: "-100px" }}
         whileInView={{ opacity: 1 }}
       >
-        <h2 className="text-mobile-h2-400 md:text-desktop-h4-400">
+        <h2 className="text-mobile-h2-400 lg:text-desktop-h5-400 xl:text-desktop-h4-400">
           Since 2015, we&apos;ve been committed to preserving nature through
           produce{" "}
-          <strong className="text-mobile-h2-700 md:text-desktop-h4-700 text-primary-forest-green">
+          <strong className="text-mobile-h2-700 lg:text-desktop-h5-700 xl:text-desktop-h4-700 text-primary-forest-green">
             Wood Pellets as a biomass energy source.
           </strong>
         </h2>

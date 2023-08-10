@@ -13,7 +13,7 @@ import { CtaSection } from "./_sections/cta-section";
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-full overflow-x-hidden">
       <Navigation />
       <HeroSection />
       <IntroductionSection />

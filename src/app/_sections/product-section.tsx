@@ -10,23 +10,23 @@ export const ProductSection: FC = () => {
   return (
     <section
       id="product"
-      className="flex py-[72px] md:py-[100px] px-8 md:px-[160px] flex-col items-start gap-[72px] self-stretch bg-shades-gray-10"
+      className="flex py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] flex-col items-start gap-[72px] md:gap-20 self-stretch bg-shades-gray-10"
     >
-      <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-6 md:gap-[72px] self-stretch">
+      <div className="flex flex-col lg:flex-row justify-center items-start md:items-center gap-6 md:gap-[72px] self-stretch">
         <motion.h2
           initial={{ opacity: 0 }}
-          className="md:flex-1 text-mobile-h2-400 md:text-desktop-h2-400"
+          className="md:flex-1 text-mobile-h2-400 lg:text-desktop-h3-400 xl:text-desktop-h2-400"
           transition={{ ease: "easeOut", duration: 0.8 }}
           viewport={{ margin: "-100px" }}
           whileInView={{ opacity: 1 }}
         >
           Proven biomass solutions already exist.{" "}
-          <strong className="text-mobile-h2-700 md:text-desktop-h2-700">
+          <strong className="text-mobile-h2-700 lg:text-desktop-h3-700 xl:text-desktop-h2-700">
             We make them happen.
           </strong>
         </motion.h2>
         <motion.div
-          className="w-full md:w-auto md:flex-1"
+          className="w-full lg:w-auto lg:flex-1"
           initial={{ opacity: 0 }}
           transition={{ ease: "easeOut", duration: 0.8 }}
           viewport={{ margin: "-100px" }}
@@ -48,7 +48,7 @@ export const ProductSection: FC = () => {
         viewport={{ margin: "-100px" }}
         whileInView={{ opacity: 1 }}
       >
-        <h3 className="text-mobile-h4-700 md:text-desktop-h4-700">
+        <h3 className="text-mobile-h4-700 lg:text-desktop-h5-700 xl:text-desktop-h4-700">
           We also provide another products
         </h3>
         <ProductSwiper />

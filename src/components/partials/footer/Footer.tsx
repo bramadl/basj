@@ -4,8 +4,8 @@ import { FC } from "react";
 
 export const Footer: FC = () => {
   return (
-    <footer className="flex py-[72px] px-8 md:py-[100px] md:px-[160px] flex-col md:flex-row items-start md:justify-between gap-8 md:gap-12 self-stretch bg-primary-forest-green">
-      <div className="flex flex-col items-start md:justify-between gap-8 md:gap-0 self-stretch">
+    <footer className="flex py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] flex-col lg:flex-row items-start lg:justify-between gap-8 md:gap-20 xl:gap-12 self-stretch bg-primary-forest-green">
+      <div className="flex flex-col items-start md:justify-between gap-8 md:gap-12 lg:gap-0 self-stretch">
         <div className="flex flex-col items-start gap-5 self-stretch">
           <Logo type="footer" />
           <ul className="flex items-start gap-5">

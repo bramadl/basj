@@ -29,6 +29,10 @@ export const ProductSwiper: FC = () => {
     <Swiper
       breakpoints={{
         768: {
+          slidesPerView: 1,
+          spaceBetween: 28,
+        },
+        1024: {
           slidesPerView: 3,
           spaceBetween: 28,
         },

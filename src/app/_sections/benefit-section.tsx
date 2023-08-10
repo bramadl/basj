@@ -14,23 +14,23 @@ export const BenefitSection: FC = () => {
   return (
     <section
       id="benefits"
-      className="flex flex-col items-start gap-12 md:gap-[72px] self-stretch py-[72px] md:py-[100px] px-8 md:px-[160px] bg-shades-gray-10"
+      className="flex flex-col items-start gap-12 md:gap-20 xl:gap-[72px] self-stretch py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] bg-shades-gray-10"
     >
       <motion.h2
         initial={{ opacity: 0 }}
-        className="text-center text-mobile-h2-400 md:text-desktop-h2-400 self-stretch"
+        className="text-center text-mobile-h2-400 lg:text-desktop-h3-400 xl:text-desktop-h2-400 self-stretch"
         transition={{ ease: "easeOut", duration: 0.8 }}
         viewport={{ margin: "-100px" }}
         whileInView={{ opacity: 1 }}
       >
         Wood Pellets,{" "}
-        <strong className="text-mobile-h2-700 md:text-desktop-h2-700">
+        <strong className="text-mobile-h2-700 lg:text-desktop-h3-700 xl:text-desktop-h2-700">
           the future of clean energy.
         </strong>
       </motion.h2>
       <motion.div
         initial={{ opacity: 0 }}
-        className="flex flex-col md:flex-row items-center gap-[52px] self-stretch"
+        className="flex flex-col lg:flex-row items-center gap-[52px] self-stretch"
         transition={{ ease: "easeOut", duration: 0.8 }}
         viewport={{ margin: "-100px" }}
         whileInView={{ opacity: 1 }}

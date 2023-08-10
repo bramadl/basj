@@ -32,6 +32,14 @@ export const StatisticSwiper: FC = () => {
     <Swiper
       breakpoints={{
         768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        1280: {
           slidesPerView: 4,
           spaceBetween: 24,
         },
@@ -44,8 +52,8 @@ export const StatisticSwiper: FC = () => {
         <article className="flex p-8 flex-col items-start gap-6 self-stretch rounded-xl bg-primary-dark-forest-green text-primary-white">
           <p className="text-mobile-h5-400 md:text-desktop-h5-400">{statistic.year}</p>
           <section className="flex items-center gap-4">
-            <p className="text-mobile-h1-400 md:text-desktop-h1-400">{statistic.amount}</p>
-            <h3 className="text-mobile-h5-400 md:text-desktop-h5-400">{statistic.label}</h3>
+            <p className="text-mobile-h1-400 lg:text-desktop-h2-400 xl:text-desktop-h1-400">{statistic.amount}</p>
+            <h3 className="text-mobile-h5-400 lg:text-desktop-h6-400 xl:text-desktop-h5-400">{statistic.label}</h3>
           </section>
         </article>
       )}
