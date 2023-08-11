@@ -97,7 +97,6 @@ const config: Config = {
         ".text-mobile-sm-400": { font: "400 10px/12px var(--font-montserrat), sans-serif" },
       });
     }),
-    require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/container-queries"),
     require("@tailwindcss/typography"),
   ],
