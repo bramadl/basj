@@ -2,7 +2,7 @@
 
 import { Swiper } from "@basj/components/core/swiper/Swiper";
 
-import { FC } from "react";
+import { FC, Fragment } from "react";
 
 import { ProductCard } from "./product-card";
 
@@ -26,22 +26,27 @@ export const ProductSwiper: FC = () => {
   ];
 
   return (
-    <Swiper
-      breakpoints={{
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 28,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 28,
-        },
-      }}
-      items={products}
-      slidesPerView={1}
-      spaceBetween={32}
-    >
-      {(product) => <ProductCard {...product} className="h-[239px]" />}
-    </Swiper>
+    <Fragment>
+      <h3 className="text-mobile-h4-700 lg:text-desktop-h5-700 xl:text-desktop-h4-700">
+        We also provide another products
+      </h3>
+      <Swiper
+        breakpoints={{
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 28,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 28,
+          },
+        }}
+        items={products}
+        slidesPerView={1}
+        spaceBetween={32}
+      >
+        {(product) => <ProductCard {...product} className="h-[239px]" />}
+      </Swiper>
+    </Fragment>
   );
 };
