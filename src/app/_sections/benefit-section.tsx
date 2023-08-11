@@ -52,6 +52,7 @@ export const BenefitSection: FC = () => {
         />
       </motion.div>
       <motion.div
+        className="w-full"
         initial={{ opacity: 0 }}
         transition={{ ease: "easeOut", duration: 0.8 }}
         viewport={{ margin: "-100px" }}
