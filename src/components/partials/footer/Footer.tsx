@@ -1,4 +1,6 @@
+import { links, socialMedias } from "@basj/common/constants/site-links";
 import { Logo } from "@basj/components/core/logo/Logo";
+
 import Link from "next/link";
 import { FC } from "react";
 
@@ -9,18 +11,11 @@ export const Footer: FC = () => {
         <div className="flex flex-col items-start gap-5 self-stretch">
           <Logo type="footer" />
           <ul className="flex items-start gap-5">
-            <li className="text-primary-white">
-              <i className="bx bx-sm bxl-facebook" />
-            </li>
-            <li className="text-primary-white">
-              <i className="bx bx-sm bxl-twitter" />
-            </li>
-            <li className="text-primary-white">
-              <i className="bx bx-sm bxl-instagram" />
-            </li>
-            <li className="text-primary-white">
-              <i className="bx bx-sm bxl-linkedin" />
-            </li>
+            {socialMedias.map((socialMedia, key) => (
+              <li key={key} className="text-primary-white">
+                <i className={`bx bx-sm ${socialMedia.icon}`} />
+              </li>
+            ))}
           </ul>
         </div>
         <p className="text-mobile-b1-400 text-primary-white">
@@ -30,16 +25,12 @@ export const Footer: FC = () => {
       <div className="flex items-start gap-12 md:gap-[120px] self-stretch text-primary-white">
         <div className="flex flex-col items-start gap-5 whitespace-nowrap">
           <p className="text-center text-mobile-h5-700">Sitemap</p>
-          <Link className="text-mobile-b1-400" href={{ href: "/" }}>
-            Home
-          </Link>
-          <Link className="text-mobile-b1-400" href={{ href: "/" }}>
-            About Us
-          </Link>
-          <Link className="text-mobile-b1-400" href={{ href: "/" }}>
-            Product
-          </Link>
-          <Link className="text-mobile-b1-400" href={{ href: "/" }}>
+          {links.map((link, key) => (
+            <Link key={key} className="text-mobile-b1-400" href={{ pathname: link.href }}>
+              {link.label}
+            </Link>
+          ))}
+          <Link className="text-mobile-b1-400" href={{ pathname: "/" }}>
             Contact Us
           </Link>
         </div>

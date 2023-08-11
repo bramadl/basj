@@ -1,5 +1,6 @@
 "use client";
 
+import { links } from "@basj/common/constants/site-links";
 import { Button } from "@basj/components/core/button/Button";
 import { Logo } from "@basj/components/core/logo/Logo";
 
@@ -7,7 +8,6 @@ import Link from "next/link";
 import { FC, Fragment, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import { links } from "./links";
 import { NavigationContainer } from "./NavigationContainer";
 
 export const MobileMenu: FC = () => {
@@ -28,7 +28,7 @@ export const MobileMenu: FC = () => {
           >
             <div className="w-full flex flex-col">
               <NavigationContainer>
-                <Link href={{ href: "/" }}>
+                <Link href={{ pathname: "/" }}>
                   <Logo className="flex-shrink-0 h-6 fill-primary-dark" />
                 </Link>
                 <button onClick={() => setIsOpened(false)}>
@@ -40,7 +40,7 @@ export const MobileMenu: FC = () => {
                   <li key={key}>
                     <Link
                       className="flex items-center justify-between py-4 px-8 text-mobile-b1-400"
-                      href={{ href: link.href }}
+                      href={{ pathname: link.href }}
                     >
                       {link.label}
                       <i className="bx bx-sm bx-right-arrow-alt text-shades-gray-40" />
