@@ -23,7 +23,7 @@ export const NavigationContainer: FC<NavigationContainerProps> = ({
   const classes = useMemo(() => {
     return [
       props.className,
-      fixed ? "fixed z-[1] top-0 left-0" : "static",
+      fixed ? "fixed z-[2] top-0 left-0" : "static",
       colors,
     ].join(" ");
   }, [colors, fixed, props.className]);
