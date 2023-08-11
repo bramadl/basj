@@ -8,9 +8,9 @@ import { NavigationContainer } from "./NavigationContainer";
 
 export const MobileNavigation: FC = () => {
   return (
-    <NavigationContainer className="absolute z-[1] top-0 left-0 md:hidden">
+    <NavigationContainer className="md:hidden" fixed>
       <Link href={{ href: "/" }}>
-        <Logo className="flex-shrink-0 h-6 md:h-8 fill-primary-white" />
+        <Logo className="flex-shrink-0 h-6 md:h-8 fill-inherit" />
       </Link>
       <MobileMenu />
     </NavigationContainer>

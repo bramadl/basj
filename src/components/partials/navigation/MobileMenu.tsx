@@ -13,10 +13,20 @@ import { NavigationContainer } from "./NavigationContainer";
 export const MobileMenu: FC = () => {
   const [isOpened, setIsOpened] = useState<boolean>(false);
 
+  function openMenu() {
+    document.body.classList.add("overflow-hidden");
+    setIsOpened(true);
+  }
+
+  function closeMenu() {
+    document.body.classList.remove("overflow-hidden");
+    setIsOpened(false);
+  }
+
   return (
     <Fragment>
-      <button onClick={() => setIsOpened(true)}>
-        <i className="bx bx-sm bx-menu-alt-right text-primary-white" />
+      <button onClick={openMenu}>
+        <i className="bx bx-sm bx-menu-alt-right" />
       </button>
       <AnimatePresence>
         {isOpened && (
@@ -31,7 +41,7 @@ export const MobileMenu: FC = () => {
                 <Link href={{ pathname: "/" }}>
                   <Logo className="flex-shrink-0 h-6 fill-primary-dark" />
                 </Link>
-                <button onClick={() => setIsOpened(false)}>
+                <button onClick={closeMenu}>
                   <i className="bx bx-sm bx-x text-primary-dark" />
                 </button>
               </NavigationContainer>
@@ -39,7 +49,7 @@ export const MobileMenu: FC = () => {
                 {links.map((link, key) => (
                   <li key={key}>
                     <Link
-                      className="flex items-center justify-between py-4 px-8 text-mobile-b1-400"
+                      className="flex items-center justify-between py-4 px-8 text-mobile-b1-400 text-primary-dark"
                       href={{ pathname: link.href }}
                     >
                       {link.label}
