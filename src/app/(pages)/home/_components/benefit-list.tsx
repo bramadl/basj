@@ -10,16 +10,19 @@ export const BenefitList: FC = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center gap-[52px] self-stretch">
       <BenefitCard
+        className="opacity-0"
         description="Wood pellets can be replenished over time. This makes them a sustainable alternative to fossil fuels, which are a finite resource."
         image={EnergySVG}
         title="Renewable"
       />
       <BenefitCard
+        className="opacity-0"
         description="Wood pellets produce lower emissions of greenhouse gases than fossil fuels, such as coal and oil."
         image={LeafSVG}
         title="Low emissions"
       />
       <BenefitCard
+        className="opacity-0"
         description="Wood pellets are a cost-effective way to generate heat and electricity, and a viable option for businesses and homeowners who are looking to reduce their energy costs."
         image={MoneySVG}
         title="Economically viable"

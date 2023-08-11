@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FC, Fragment, ReactNode, useState } from "react";
+import { FC, Fragment, HTMLAttributes, ReactNode, useState } from "react";
 import { motion } from "framer-motion";
 import { Dialog, Transition } from "@headlessui/react";
 
@@ -86,9 +86,14 @@ const VideoPlayer: FC<{ children: (open: () => void) => ReactNode }> = ({
   );
 };
 
-export const IntroductionVideo: FC = () => {
+interface IntroductionVideoProps extends HTMLAttributes<HTMLDivElement> {}
+
+export const IntroductionVideo: FC<IntroductionVideoProps> = ({ ...props }) => {
   return (
-    <div className="relative flex-shrink-0 w-full lg:w-auto lg:flex-1 h-[188.669px] md:h-[320px]">
+    <div
+      {...props}
+      className={`${props.className} relative flex-shrink-0 w-full lg:w-auto lg:flex-1 h-[188.669px] md:h-[320px]`}
+    >
       <Image
         alt="Thumbnail"
         className="rounded-xl object-cover"

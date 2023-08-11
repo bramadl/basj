@@ -1,35 +1,19 @@
 "use client";
 
 import { Button } from "@basj/components/core/button/Button";
+import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
-import { FC, useEffect } from "react";
+import { FC } from "react";
 
 import { HeroTitle } from "../_components/hero-title";
 import { HeroMessage } from "../_components/hero-message";
-import { AnimationSequence, useAnimate } from "framer-motion";
 
 export const HeroSection: FC = () => {
-  const elements = {
+  const { scope } = useFadeTransition({
     title: "h1",
     message: "p",
     button: "button",
-  };
-
-  const [scope, animate] = useAnimate();
-
-  useEffect(() => {
-    const sequence: AnimationSequence = [
-      [elements.title, { opacity: [0, 1] }],
-      [elements.message, { opacity: [0, 1] }, { at: "-0.8" }],
-      [elements.button, { opacity: [0, 1] }, { at: "-0.8" }],
-    ];
-
-    const animation = animate(sequence, {
-      defaultTransition: { duration: 1, ease: "easeOut" },
-    });
-
-    return animation.stop;
-  }, [animate, elements.button, elements.message, elements.title]);
+  });
 
   return (
     <section

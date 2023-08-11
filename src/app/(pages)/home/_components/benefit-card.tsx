@@ -1,15 +1,23 @@
 import Image from "next/image";
-import { FC } from "react";
+import { FC, HTMLAttributes } from "react";
 
-interface BenefitCardProps {
+interface BenefitCardProps extends HTMLAttributes<HTMLDivElement> {
   image: any;
   title: string;
   description: string;
 }
 
-export const BenefitCard: FC<BenefitCardProps> = ({ description, image, title }) => {
+export const BenefitCard: FC<BenefitCardProps> = ({
+  description,
+  image,
+  title,
+  ...props
+}) => {
   return (
-    <div className="md:flex-1 flex flex-col justify-center md:justify-start items-start gap-7 self-stretch">
+    <div
+      {...props}
+      className={`${props.className} benefit-card md:flex-1 flex flex-col justify-center md:justify-start items-start gap-7 self-stretch`}
+    >
       <div className="flex p-2 justify-center items-center gap-2.5 rounded-lg bg-primary-bold-amber">
         <Image alt="enery" src={image} />
       </div>

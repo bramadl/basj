@@ -1,10 +1,12 @@
 import { Callout } from "@basj/components/core/callout/Callout";
 
-import { FC } from "react";
+import { FC, HTMLAttributes } from "react";
 
-export const BenefitCallout: FC = () => {
+interface BenefitCalloutProps extends HTMLAttributes<HTMLDivElement> {}
+
+export const BenefitCallout: FC<BenefitCalloutProps> = ({ ...props }) => {
   return (
-    <div className="w-full">
+    <div {...props} className={`${props.className} w-full`}>
       <Callout>
         <article>
           <p className="text-shades-gray-50 text-mobile-h6-400">
