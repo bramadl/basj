@@ -1,6 +1,8 @@
 import "@basj/assets/styles/globals.css";
 import { kollektifFont } from "@basj/common/fonts/kollektif.font";
 import { montserratFont } from "@basj/common/fonts/montserrat.font";
+import { Footer } from "@basj/components/partials/footer/Footer";
+import { Navigation } from "@basj/components/partials/navigation/Navigation";
 
 import type { Metadata } from "next";
 
@@ -22,7 +24,13 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={kollektifFont.variable}>{children}</body>
+      <body className={kollektifFont.variable}>
+        <Navigation />
+        <main className="w-full min-h-screen overflow-x-hidden">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

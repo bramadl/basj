@@ -1,5 +1,4 @@
-import { Footer } from "@basj/components/partials/footer/Footer";
-import { Navigation } from "@basj/components/partials/navigation/Navigation";
+import { Fragment } from "react";
 
 import { HeroSection } from "./_sections/hero-section";
 import { IntroductionSection } from "./_sections/introduction-section";
@@ -13,8 +12,7 @@ import { CtaSection } from "./_sections/cta-section";
 
 export default function Home() {
   return (
-    <main className="w-full overflow-x-hidden">
-      <Navigation />
+    <Fragment>
       <HeroSection />
       <IntroductionSection />
       <BenefitSection />
@@ -24,7 +22,6 @@ export default function Home() {
       <TestimonySection />
       <MapSection />
       <CtaSection />
-      <Footer />
-    </main>
+    </Fragment>
   );
 }
