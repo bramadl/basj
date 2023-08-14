@@ -27,7 +27,7 @@ export const ProductSwiper: FC = () => {
 
   return (
     <Fragment>
-      <h3 className="text-mobile-h4-400 lg:text-desktop-h5-400 xl:text-desktop-h4-400">
+      <h3 className="text-mobile-h4-400 lg:text-desktop-h5-400 xl:text-desktop-h4-400 opacity-0">
         We also provide another products
       </h3>
       <Swiper
@@ -45,7 +45,7 @@ export const ProductSwiper: FC = () => {
         slidesPerView={1}
         spaceBetween={32}
       >
-        {(product) => <ProductCard {...product} className="product-card h-[239px]" />}
+        {(product) => <ProductCard {...product} className="product-card h-[239px] opacity-0" />}
       </Swiper>
     </Fragment>
   );
