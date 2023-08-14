@@ -1,4 +1,4 @@
-import { links, socialMedias } from "@basj/common/constants/site-links";
+import { links } from "@basj/common/constants/site-links";
 import { Logo } from "@basj/components/core/logo/Logo";
 
 import Link from "next/link";
@@ -10,13 +10,6 @@ export const Footer: FC = () => {
       <div className="flex flex-col items-start md:justify-between gap-8 md:gap-12 lg:gap-0 self-stretch">
         <div className="flex flex-col items-start gap-5 self-stretch">
           <Logo type="footer" />
-          <ul className="flex items-start gap-5">
-            {socialMedias.map((socialMedia, key) => (
-              <li key={key} className="text-primary-white">
-                <i className={`bx bx-sm ${socialMedia.icon}`} />
-              </li>
-            ))}
-          </ul>
         </div>
         <p className="text-mobile-b1-400 text-primary-white">
           &copy; 2023 All right reserved.
