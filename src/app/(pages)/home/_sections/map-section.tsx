@@ -24,7 +24,7 @@ export const MapSection: FC = () => {
     <section
       ref={scope}
       id="map"
-      className="flex py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] flex-col lg:flex-row items-start lg:items-center gap-[48px] md:gap-20 xl:gap-[72px] self-stretch bg-shades-gray-10"
+      className="flex py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] flex-col lg:flex-row items-start lg:items-center gap-[48px] md:gap-20 xl:gap-[72px] self-stretch bg-white"
     >
       <div className="lg:flex-1 flex flex-col items-center justify-center gap-5 self-stretch">
         <MapTitle />

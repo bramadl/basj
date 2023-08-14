@@ -1,11 +1,11 @@
 "use client";
 
+import { BenefitList } from "@basj/app/(shared)/(components)/benefit-list";
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
 
 import { BenefitTitle } from "../_components/benefit-title";
-import { BenefitList } from "../_components/benefit-list";
 import { BenefitCallout } from "../_components/benefit-callout";
 
 export const BenefitSection: FC = () => {

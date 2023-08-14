@@ -22,7 +22,7 @@ export const ClientSection: FC = () => {
     <section
       ref={scope}
       id="client"
-      className="flex flex-col lg:flex-row items-start lg:items-center lg:justify-between gap-12 md:gap-20 xl:gap-[72px] self-stretch py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] bg-shades-gray-10"
+      className="flex flex-col lg:flex-row items-start lg:items-center lg:justify-between gap-12 md:gap-20 xl:gap-[72px] self-stretch py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] bg-white"
     >
       <div className="flex flex-col items-center gap-6 self-stretch md:max-w-[502px]">
         <ClientTitle />

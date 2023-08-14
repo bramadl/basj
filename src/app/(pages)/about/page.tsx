@@ -6,6 +6,7 @@ import { Fragment } from "react";
 
 import { HeroSection } from "./_sections/hero-section";
 import { IntroductionSection } from "./_sections/introduction-section";
+import { BenefitSection } from "./_sections/benefit-section";
 
 export default function AboutPage() {
   return (
@@ -13,6 +14,7 @@ export default function AboutPage() {
       <HeroSection />
       <IntroductionSection />
       <StatisticSection />
+      <BenefitSection />
       <ClientSection />
       <CtaSection />
     </Fragment>

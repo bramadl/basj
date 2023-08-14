@@ -22,8 +22,8 @@ export const BenefitCard: FC<BenefitCardProps> = ({
         <Image alt="enery" src={image} />
       </div>
       <div className="flex flex-col justify-center items-start gap-3 self-stretch">
-        <h3 className="text-mobile-h5-700">{title}</h3>
-        <p className="text-mobile-b1-400">{description}</p>
+        <h3 className="text-mobile-h5-400 lg:text-desktop-h5-400">{title}</h3>
+        <p className="text-mobile-b1-400 lg:text-desktop-b1-400">{description}</p>
       </div>
     </div>
   );
