@@ -45,7 +45,7 @@ export const ProductSwiper: FC = () => {
         slidesPerView={1}
         spaceBetween={32}
       >
-        {(product) => <ProductCard {...product} className="h-[239px]" />}
+        {(product) => <ProductCard {...product} className="product-card h-[239px]" />}
       </Swiper>
     </Fragment>
   );

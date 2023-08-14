@@ -1,3 +1,7 @@
+"use client";
+
+import { useFadeTransition } from "@basj/hooks/useFadeTransition";
+
 import { FC } from "react";
 
 import { ProductSwiper } from "../_components/product-swiper";
@@ -5,8 +9,16 @@ import { ProductTitle } from "../_components/product-title";
 import { ProductThumbnail } from "../_components/product-thumbnail";
 
 export const ProductSection: FC = () => {
+  const { scope } = useFadeTransition({
+    title: "h2",
+    thumbnail: ".product-thumbnail",
+    subtitle: "h3",
+    cards: ".product-card"
+  }, { staggerDelay: "-0.4", whenInView: true });
+  
   return (
     <section
+      ref={scope}
       id="product"
       className="flex py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] flex-col items-start gap-[72px] md:gap-20 self-stretch bg-shades-gray-10"
     >

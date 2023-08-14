@@ -4,7 +4,7 @@ import { ProductCard } from "./product-card";
 
 export const ProductThumbnail: FC = () => {
   return (
-    <div className="w-full lg:w-auto lg:flex-1">
+    <div className="product-thumbnail w-full lg:w-auto lg:flex-1">
       <ProductCard
         caption="Wood pellet"
         className="h-[352px]"
