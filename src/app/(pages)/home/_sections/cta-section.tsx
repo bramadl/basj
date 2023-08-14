@@ -1,12 +1,25 @@
+"use client";
+
 import { Button } from "@basj/components/core/button/Button";
+import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
 import { CtaTitle } from "../_components/cta-title";
 import { CtaMessage } from "../_components/cta-message";
 
 export const CtaSection: FC = () => {
+  const { scope } = useFadeTransition(
+    {
+      title: "h2",
+      message: ".cta-message",
+      button: ".cta-button",
+    },
+    { staggerDelay: "-0.4", whenInView: true }
+  );
+
   return (
     <section
+      ref={scope}
       id="cta"
       className="flex py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] flex-col justify-center items-center self-stretch"
       style={{
@@ -17,7 +30,9 @@ export const CtaSection: FC = () => {
       <div className="flex py-10 md:py-20 px-8 md:px-[120px] xl:px-[200px] flex-col justify-center items-center gap-6 md:gap-7 self-stretch md:self-auto rounded-[20px] md:rounded-[40px] bg-[rgba(176,93,36,0.40)] backdrop-blur-[5px] text-primary-white">
         <CtaTitle />
         <CtaMessage />
-        <Button outline="light">Contact us</Button>
+        <Button className="cta-button" outline="light">
+          Contact us
+        </Button>
       </div>
     </section>
   );
