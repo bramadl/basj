@@ -34,7 +34,7 @@ export const NavigationContainer: FC<NavigationContainerProps> = ({
 
   return (
     <nav
-      className={`${classes} w-full flex items-center justify-between py-5 px-8 md:py-6 md:px-10 lg:py-8 lg:px-[120px] xl:px-[160px] transition-colors ease-out duration-300`}
+      className={`${classes} w-full flex items-center justify-between py-6 px-8 md:py-6 md:px-10 lg:py-8 lg:px-[120px] xl:px-[160px] transition-colors ease-out duration-300`}
     >
       {props.children}
     </nav>

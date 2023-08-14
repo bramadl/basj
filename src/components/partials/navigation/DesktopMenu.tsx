@@ -19,13 +19,13 @@ export const DesktopMenu: FC = () => {
     <ul className="hidden md:flex items-center gap-12">
       {links.map((link, key) => (
         <li key={key}>
-          <Link className="text-desktop-b1-400" href={{ pathname: link.href }}>
+          <Link className="text-desktop-b2-400" href={{ pathname: link.href }}>
             {link.label}
           </Link>
         </li>
       ))}
       <li>
-        <Link className="text-desktop-b1-400" href={{ pathname: "/" }}>
+        <Link className="text-desktop-b2-400" href={{ pathname: "/" }}>
           <Button outline={outlineColor} size="sm">
             Contact us
           </Button>
