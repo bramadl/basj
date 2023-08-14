@@ -31,7 +31,7 @@ export const CtaSection: FC = () => {
       <div className="flex py-10 md:py-20 px-8 md:px-[120px] xl:px-[200px] flex-col justify-center items-center gap-6 md:gap-7 self-stretch md:self-auto rounded-[20px] md:rounded-[40px] bg-[rgba(176,93,36,0.40)] backdrop-blur-[5px] text-primary-white">
         <CtaTitle />
         <CtaMessage />
-        <Button className="cta-button" outline="light">
+        <Button className="cta-button opacity-0" outline="light">
           Contact us
         </Button>
       </div>
