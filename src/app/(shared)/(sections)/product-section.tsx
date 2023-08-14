@@ -4,9 +4,9 @@ import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
 
-import { ProductSwiper } from "../_components/product-swiper";
-import { ProductTitle } from "../_components/product-title";
-import { ProductThumbnail } from "../_components/product-thumbnail";
+import { ProductSwiper } from "../(components)/product-swiper";
+import { ProductTitle } from "../(components)/product-title";
+import { ProductThumbnail } from "../(components)/product-thumbnail";
 
 export const ProductSection: FC = () => {
   const { scope } = useFadeTransition({

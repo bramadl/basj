@@ -27,7 +27,7 @@ export const ProductSwiper: FC = () => {
 
   return (
     <Fragment>
-      <h3 className="text-mobile-h4-700 lg:text-desktop-h5-700 xl:text-desktop-h4-700">
+      <h3 className="text-mobile-h4-400 lg:text-desktop-h5-400 xl:text-desktop-h4-400">
         We also provide another products
       </h3>
       <Swiper

@@ -31,4 +31,15 @@
       url(https://s3-alpha-sig.figma.com/img/94ac/f200/90050336bf941f350430ac593ec2e113?Expires=1693180800&Signature=mWHtVYtAAavvpTTDZIWa9OeUAj2p4BqKJ9Duxs2zm4ObFE3-OmsMC01Wn0DilWUwp9M6qNngB0IX4OA3D2AoU9G4Zr9LQvgC~C526C3yUO5nwlxBrkfJ5hwEFPP3iSeVDt5XwwSsVUQ8ywAHtY-7WWudKIdWh01MgSMgPdAXuKFTKENbrJzdOLeu76vv3BbAZP-Z4iDM6rn6sLlulerb09Z2HsmQKCKzANS8cdqYCGYjhKDK3RgtU7H4FdDzH4G5lbqpATrkCwwFpiOdKmC8vNl-hWoUjAIzhJp6nVR2keubdmEI1XHFPavGTVmardtdc~tBN34fAoB9OYxzC53w8Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)
       bottom center/cover;
   }
+
+  .basj-product-hero-background {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(51, 27, 10, 0.6) 0%,
+        rgba(51, 27, 10, 0.6) 100%
+      ),
+      url(https://s3-alpha-sig.figma.com/img/1365/5530/89b3b2b33c97ccc6aec39915131faf2e?Expires=1693180800&Signature=pIYWgHV4AhJTXaHIYMse5g7MQgiRMceR2A4mVww5wXUMJqUcUI~Q7MZwpXXWbKeyS0WLVwhbbseRIM6kwDN~fN5aH4s0haBvtLByzQKIc~~Zhnlm-cFVR~UNQlE5cRYmMX41QoHpipcqpWrwcaEziFvWf7TSWOHTP6zgjx4otg3ne~iJDrPhiYevJgi~n6vb6YvCYQv1WaQI9unxcYdCsTHT2OMrmB6b5MhEA7TWhHmzyGYkxThO7YWBelnUfjmfxQVZjQ4z-PasZd8fEqeN5GOEnvGX30jl00T-~PeGHazP05J7gQrWKCi2BIfBCdTI7SaWKKIx2vtQCvaArsOMtA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)
+      bottom center/cover;
+  }
 }
