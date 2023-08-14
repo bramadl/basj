@@ -1,7 +1,11 @@
+import { Fragment } from "react";
+
+import { HeroSection } from "./_sections/hero-section";
+
 export default function AboutPage() {
   return (
-    <main className="w-full overflow-x-hidden">
-      About page
-    </main>
+    <Fragment>
+      <HeroSection />
+    </Fragment>
   );
 }
