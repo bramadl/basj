@@ -54,9 +54,9 @@ const VideoPlayer: FC<{ children: (open: () => void) => ReactNode }> = ({
             leaveTo="opacity-0"
           >
             <div className="fixed inset-0 flex items-center justify-center p-4">
-              <Dialog.Panel className="xl:w-[1080px] aspect-video">
+              <Dialog.Panel className="w-full md:w-[640px] xl:w-[1080px] aspect-video">
                 {!isLoaded && (
-                  <i className="bx bx-loader-circle bx-md bx-spin absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[0] text-primary-white" />
+                  <i className="bx bx-loader-circle bx-md bx-spin absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -ml-4 -mt-8 z-[0] text-primary-white" />
                 )}
                 <motion.iframe
                   animate={{ opacity: 1 }}

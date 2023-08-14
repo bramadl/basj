@@ -1,11 +1,9 @@
 "use client";
 
-import { Button } from "@basj/components/core/button/Button";
+import { IntroductionVideo } from "@basj/app/(components)/introduction-video";
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
-
-import { IntroductionVideo } from "../../../(components)/introduction-video";
 import { IntroductionTitle } from "../_components/introduction-title";
 import { IntroductionMessage } from "../_components/introduction-message";
 
@@ -28,7 +26,6 @@ export const IntroductionSection: FC = () => {
       <article className="introduction-article md:flex-1 flex flex-col items-start justify-center gap-6 self-stretch opacity-0">
         <IntroductionTitle />
         <IntroductionMessage />
-        <Button icon>Learn more</Button>
       </article>
     </section>
   );
