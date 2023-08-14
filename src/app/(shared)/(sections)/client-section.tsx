@@ -4,9 +4,9 @@ import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
 
-import { ClientTitle } from "../_components/client-title";
-import { ClientDescription } from "../_components/client-description";
-import { ClientList } from "../_components/client-list";
+import { ClientTitle } from "../(components)/client-title";
+import { ClientDescription } from "../(components)/client-description";
+import { ClientList } from "../(components)/client-list";
 
 export const ClientSection: FC = () => {
   const { scope } = useFadeTransition(

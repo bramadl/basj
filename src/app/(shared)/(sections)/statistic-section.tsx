@@ -4,9 +4,9 @@ import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
 
-import { StatisticSwiper } from "../_components/statistic-swiper";
-import { StatisticSummary } from "../_components/statistic-summary";
-import { StatisticTitle } from "../_components/statistic-title";
+import { StatisticSummary } from "../(components)/statistic-summary";
+import { StatisticSwiper } from "../(components)/statistic-swiper";
+import { StatisticTitle } from "../(components)/statistic-title";
 
 export const StatisticSection: FC = () => {
   const { scope } = useFadeTransition(

@@ -4,8 +4,9 @@ import { Button } from "@basj/components/core/button/Button";
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
-import { CtaTitle } from "../_components/cta-title";
-import { CtaMessage } from "../_components/cta-message";
+
+import { CtaMessage } from "../(components)/cta-message";
+import { CtaTitle } from "../(components)/cta-title";
 
 export const CtaSection: FC = () => {
   const { scope } = useFadeTransition(

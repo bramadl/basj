@@ -1,6 +1,6 @@
 "use client";
 
-import { IntroductionVideo } from "@basj/app/(components)/introduction-video";
+import { IntroductionVideo } from "@basj/app/(shared)/(components)/introduction-video";
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";

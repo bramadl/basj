@@ -5,7 +5,7 @@ import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
 
-import { IntroductionVideo } from "../../../(components)/introduction-video";
+import { IntroductionVideo } from "../../../(shared)/(components)/introduction-video";
 import { IntroductionTitle } from "../_components/introduction-title";
 import { IntroductionMessage } from "../_components/introduction-message";
 
