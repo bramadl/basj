@@ -16,7 +16,7 @@ export const StatisticCardSummary: FC<StatisticCardSummaryProps> = ({
   return (
     <article
       ref={scope}
-      className={`flex p-6 flex-col items-start gap-5 self-stretch rounded-xl ${
+      className={`statistic-card-summary flex p-6 flex-col items-start gap-5 self-stretch rounded-xl ${
         variant === "white"
           ? "bg-primary-white text-primary-forest-green"
           : "bg-primary-dark-forest-green text-primary-white"
