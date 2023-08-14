@@ -19,7 +19,7 @@ export const BenefitSection: FC = () => {
     <section
       ref={scope}
       id="benefits"
-      className="flex flex-col items-start gap-12 md:gap-20 xl:gap-[72px] self-stretch py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] bg-shades-gray-10"
+      className="flex flex-col items-start gap-12 md:gap-20 xl:gap-[72px] self-stretch py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] bg-primary-light-amber"
     >
       <BenefitTitle className="opacity-0" />
       <BenefitList />

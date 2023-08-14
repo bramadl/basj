@@ -12,7 +12,7 @@ const Dot: FC = () => {
 
 export const Callout: FC<CalloutProps> = ({ ...props }) => {
   return (
-    <div className="flex flex-shrink-0 items-start justify-start self-stretch gap-5 py-5 px-7 rounded-lg bg-primary-light-amber">
+    <div className="flex flex-shrink-0 items-start justify-start self-stretch gap-5 py-5 px-7 rounded-lg bg-primary-white">
       <Dot />
       {props.children}
     </div>
