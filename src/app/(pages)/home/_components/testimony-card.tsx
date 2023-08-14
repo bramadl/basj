@@ -5,7 +5,7 @@ import { FC } from "react";
 
 export const TestimonyCard: FC = () => {
   return (
-    <div className="flex flex-col gap-8 text-primary-white md:max-w-[509px]">
+    <div className="testimony-card flex flex-col gap-8 text-primary-white md:max-w-[509px]">
       <Image alt="quote" src={QuoteSVG} />
       <article className="flex flex-col gap-4">
         <h3 className="text-mobile-h6-400 md:text-desktop-h6-400">

@@ -1,10 +1,22 @@
+"use client";
+
+import { useFadeTransition } from "@basj/hooks/useFadeTransition";
+
 import { FC } from "react";
 
 import { TestimonyCard } from "../_components/testimony-card";
 
 export const TestimonySection: FC = () => {
+  const { scope } = useFadeTransition(
+    {
+      card: ".testimony-card",
+    },
+    { staggerDelay: "-0.4", whenInView: true }
+  );
+
   return (
     <section
+      ref={scope}
       id="testimony"
       className="flex py-16 px-8 md:py-20 md:px-[120px] lg:py-[100px] lg:px-[160px] flex-col justify-center items-center self-stretch"
       style={{
