@@ -60,9 +60,11 @@ export const MobileMenu: FC = () => {
               </ul>
             </div>
             <div className="w-full flex items-center justify-center py-5 px-8">
-              <Button className="w-full" outline="dark" size="sm">
-                Contact us
-              </Button>
+              <Link className="self-stretch w-full block" href={{ pathname: "/contact" }}>
+                <Button className="w-full" outline="dark" size="sm">
+                  Contact us
+                </Button>
+              </Link>
             </div>
           </motion.aside>
         )}

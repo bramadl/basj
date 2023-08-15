@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@basj/components/core/button/Button";
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
@@ -7,13 +8,16 @@ import { FC } from "react";
 import { ClientTitle } from "../(components)/client-title";
 import { ClientDescription } from "../(components)/client-description";
 import { ClientList } from "../(components)/client-list";
+import { ClientCertificate } from "../(components)/client-certificate";
 
 export const ClientSection: FC = () => {
   const { scope } = useFadeTransition(
     {
       title: "h2",
       description: ".client-description",
+      button: ".button",
       images: ".client-list-image",
+      certificates: ".client-certificate",
     },
     { staggerDelay: "-0.4", whenInView: true }
   );
@@ -27,8 +31,14 @@ export const ClientSection: FC = () => {
       <div className="flex flex-col items-center gap-6 self-stretch md:max-w-[502px]">
         <ClientTitle />
         <ClientDescription />
+        <div className="self-stretch button xl:hidden opacity-0">
+          <Button icon>View certificate</Button>
+        </div>
       </div>
-      <ClientList />
+      <div className="flex flex-col items-start gap-10">
+        <ClientList />
+        <ClientCertificate />
+      </div>
     </section>
   );
 };

@@ -23,7 +23,7 @@ export const Footer: FC = () => {
               {link.label}
             </Link>
           ))}
-          <Link className="text-mobile-b1-400" href={{ pathname: "/" }}>
+          <Link className="text-mobile-b1-400" href={{ pathname: "/contact" }}>
             Contact Us
           </Link>
         </div>

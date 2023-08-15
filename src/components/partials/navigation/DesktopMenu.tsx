@@ -25,7 +25,7 @@ export const DesktopMenu: FC = () => {
         </li>
       ))}
       <li>
-        <Link className="text-desktop-b2-400" href={{ pathname: "/" }}>
+        <Link className="text-desktop-b2-400" href={{ pathname: "/contact" }}>
           <Button outline={outlineColor} size="sm">
             Contact us
           </Button>
