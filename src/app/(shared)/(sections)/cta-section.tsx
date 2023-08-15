@@ -16,7 +16,7 @@ export const CtaSection: FC = () => {
       message: ".cta-message",
       button: ".cta-button",
     },
-    { staggerDelay: "-0.4", whenInView: true }
+    { staggerDelay: "-0.6", whenInView: true }
   );
 
   return (

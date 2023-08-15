@@ -1,25 +1,48 @@
 "use client";
 
 import Image from "next/image";
-import { FC, HTMLAttributes } from "react";
+import { FC, HTMLAttributes, useEffect, useState } from "react";
 import { VideoPlayer } from "./video-player";
+import { performRequest } from "@basj/libs/datocms";
 
 interface IntroductionVideoProps extends HTMLAttributes<HTMLDivElement> {}
 
+const QUERY = `
+  query CompanyProfileVideo {
+    companyProfileSection {
+      videoThumbnail {
+        alt
+        url
+        width
+        height
+      }
+    }
+  }
+`;
+
 export const IntroductionVideo: FC<IntroductionVideoProps> = ({ ...props }) => {
+  const [video, setVideo] = useState<any>(undefined);
+
+  useEffect(() => {
+    performRequest({
+      query: QUERY,
+      revalidate: 60 * 60,
+    }).then(({ companyProfileSection }) =>
+      setVideo(companyProfileSection.videoThumbnail)
+    );
+  }, []);
+
   return (
     <div
       {...props}
       className={`${props.className} relative flex-shrink-0 w-full lg:w-auto lg:flex-1 h-[188.669px] md:h-[320px]`}
     >
       <Image
-        alt="Thumbnail"
+        alt={video?.alt}
         className="w-full h-full rounded-xl object-cover"
-        src={
-          "https://s3-alpha-sig.figma.com/img/4896/0fe4/d30fb58e74cf78f249818e733af1fc59?Expires=1692576000&Signature=Xd5zgWmeCZq3by4ariDB-rzSkahAd7WT-TQ6gUtqq6sQId-s88fzo7ABfJ7Qk9GXDVdfZ5EKwXAaeS~QkC-dchDYNISaKqko100RqlmaHb2cp4DzR3VJzdVGA41xtSFHjsozAheufFXP1KyihOOSMRyeUl32KGw7yE9rs7E-XuYbJnPrqF3qrZw02zGY08jqZQj4efWtiNs1JOyJSmMg985-nX3h1A-dRRan-FqRnd4TJM7Cp7qYcuulwUlX8g1ryuRu-mdGyhRTFUtMny4mPBCliipaHmudmqEhU00GcdGRVEdHIwpKHkSJIMKbumSq14jBis9eHfks8wXLmDq8Zw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-        }
-        width={400}
-        height={400}
+        src={video?.url}
+        width={video?.width}
+        height={video?.height}
       />
       <VideoPlayer>
         {(open) => (

@@ -4,6 +4,9 @@ import { Dialog, Transition } from "@headlessui/react";
 import { FC, Fragment, ReactNode, useState } from "react";
 import { motion } from "framer-motion";
 
+const defaultSrc =
+  "https://drive.google.com/file/d/12cSMY3lpanIJjS5oubl0fKUmJIgHv2S0/preview";
+
 export const VideoPlayer: FC<{ children: (open: () => void) => ReactNode }> = ({
   children,
 }) => {
@@ -65,7 +68,7 @@ export const VideoPlayer: FC<{ children: (open: () => void) => ReactNode }> = ({
                   height="100%"
                   initial={{ opacity: 0 }}
                   loading="lazy"
-                  src="https://drive.google.com/file/d/12cSMY3lpanIJjS5oubl0fKUmJIgHv2S0/preview"
+                  src={defaultSrc}
                   transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
                   width="100%"
                   onLoad={onSourceLoaded}

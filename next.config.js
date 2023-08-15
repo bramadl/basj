@@ -5,8 +5,17 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "s3-alpha-sig.figma.com",
-        port: "",
         pathname: "/img/**",
+      },
+      {
+        protocol: "https",
+        hostname: "image.mux.com",
+        pathname: "/**/*",
+      },
+      {
+        protocol: "https",
+        hostname: "www.datocms-assets.com",
+        pathname: "/**/*",
       },
     ],
   },

@@ -6,27 +6,29 @@ import { FC } from "react";
 
 import { BenefitCard } from "./benefit-card";
 
-export const BenefitList: FC = () => {
+interface BenefitListProps {
+  items: {
+    id: string;
+    iconSvg: {
+      url: string;
+    };
+    name: string;
+    description: string;
+  }[];
+}
+
+export const BenefitList: FC<BenefitListProps> = ({ items }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center gap-[52px] self-stretch">
-      <BenefitCard
-        className="opacity-0"
-        description="Wood pellets can be replenished over time. This makes them a sustainable alternative to fossil fuels, which are a finite resource."
-        image={EnergySVG}
-        title="Renewable"
-      />
-      <BenefitCard
-        className="opacity-0"
-        description="Wood pellets produce lower emissions of greenhouse gases than fossil fuels, such as coal and oil."
-        image={LeafSVG}
-        title="Low emissions"
-      />
-      <BenefitCard
-        className="opacity-0"
-        description="Wood pellets are a cost-effective way to generate heat and electricity, and a viable option for businesses and homeowners who are looking to reduce their energy costs."
-        image={MoneySVG}
-        title="Economically viable"
-      />
+      {items.map((benefit, index) => (
+        <BenefitCard
+          key={benefit.id}
+          className="benefit-card opacity-0"
+          description={benefit.description}
+          image={index === 0 ? EnergySVG : index === 1 ? LeafSVG : MoneySVG}
+          title={benefit.name}
+        />
+      ))}
     </div>
   );
 };
