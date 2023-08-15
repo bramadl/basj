@@ -8,8 +8,8 @@ export const HeroMessage: FC<HeroMessageProps> = ({ ...props }) => {
       {...props}
       className={`${props.className} text-primary-white text-center`}
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+      Our Wood Pellets encompass more than just energy, but a great biomass
+      solution for future times to come.
     </p>
   );
 };

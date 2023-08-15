@@ -17,9 +17,9 @@ export const HeroSection: FC = () => {
     <section
       ref={scope}
       id="hero"
-      className="basj-contact-hero-background w-full min-h-screen flex items-center justify-center lg:justify-start overflow-hidden"
+      className="basj-contact-hero-background w-full min-h-[520px] flex items-center justify-center lg:justify-start overflow-hidden"
     >
-      <article className="relative flex w-[360px] md:w-[640px] lg:w-[768px] xl:w-[830px] py-16 px-8 lg:px-[120px] xl:px-[160px] flex-col justify-center items-center gap-8">
+      <article className="relative flex w-[360px] md:w-[640px] lg:w-[768px] xl:w-[960px] py-16 px-8 lg:px-[120px] xl:px-[160px] flex-col justify-center items-center gap-8">
         <div
           className="absolute z-[0] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[920px] md:w-[1080px] lg:w-[1200px] aspect-square -mt-60 lg:mt-0 lg:-ml-32 rounded-full"
           style={{

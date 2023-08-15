@@ -82,7 +82,7 @@ export const ProductionContents: FC<ProductionContentsProps> = ({
         number: "05",
         name: "Packaging & Shipping",
         message:
-          "We source our wood materials through sustainable practice, ensuring compliance to the industry's standard.",
+          "After a thorough quality control, our Wood Pellets are packaged in bags made of durable materials and ready to be shipped to our partners, both locally all throughout Medan area and globally to Japan, Korea and more.",
         points: ["Jumbo bag", "Bulk", "Weight truck"],
         images: [
           "https://s3-alpha-sig.figma.com/img/4209/ff72/3eb920359739d2a2a088df19da8354ee?Expires=1693180800&Signature=l2DrwuDkZ9z3Rm7Nl0uPqYRLADmPd41vB1v4znUhzyy-GIgdt77Anyv218qBFjcOHgxmh6sc7kcWqbJOPFEm29bmeW9W23o8mTISWmHW1ogb2ItdwHeWSkbeohgAI1zSdA-obhChWcPlRJt7XHmW-JxhLGdKuLk2fHrkOdUGN~uVQjncQIADE7Xz7L1qDNp04amIZibKhB3BoYHuP0XcGE2jhen1pH6jQSNiQcv-VE7TvbYqWr~nkrVvFv5LbivLRVJe6fTn1efX7MxIhl~UfG9auNpBw1vtYSbPmYPJr6DzXuwHjzc8kw3mweVkF3SQ5myceDPppKv-q3kFFLAaaA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",

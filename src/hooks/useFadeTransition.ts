@@ -20,7 +20,7 @@ export const useFadeTransition = (
   }
 ) => {
   const [scope, animate] = useAnimate();
-  const isInView = useInView(scope, { margin: "-100px" });
+  const isInView = useInView(scope, { margin: "-100px", once: true });
 
   useEffect(() => {
     const sequence: AnimationSequence = Object.values(elements).map(
@@ -28,7 +28,9 @@ export const useFadeTransition = (
         return [
           element,
           { opacity: [0, 1] },
-          ...(index === 0 ? [] : [{ at: options?.staggerDelay || "-0.8", delay: stagger(0.2) }]),
+          ...(index === 0
+            ? []
+            : [{ at: options?.staggerDelay || "-0.8", delay: stagger(0.2) }]),
         ] as Segment;
       }
     ) as AnimationSequence;
