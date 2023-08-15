@@ -40,8 +40,8 @@ export const Button: FC<ButtonProps> = ({
   }
 
   return (
-    <button className={buttonClass.join(" ")}>
-      <span>{props.children}</span>
+    <button {...props} className={buttonClass.join(" ")}>
+      {props.children}
       {icon}
     </button>
   );

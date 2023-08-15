@@ -23,6 +23,7 @@ const config: Config = {
         dark: "#2b2626",
         "dark-forest-green": "#064b44",
         "forest-green": "#086057",
+        "light-forest-green": "#EBFAF8",
         "light-amber": "#faeee6",
         white: "#ffffff",
       },

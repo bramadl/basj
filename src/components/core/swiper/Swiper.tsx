@@ -17,10 +17,16 @@ export interface SwiperProps
   extends RefAttributes<SwiperRef>,
     Omit<ReactSwiperProps, "children"> {
   children: (item: any) => ReactNode;
+  customSlider?: (index: number) => ReactNode;
   items: any[];
 }
 
-export const Swiper: FC<SwiperProps> = ({ children, items, ...props }) => {
+export const Swiper: FC<SwiperProps> = ({
+  children,
+  customSlider,
+  items,
+  ...props
+}) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
@@ -33,19 +39,24 @@ export const Swiper: FC<SwiperProps> = ({ children, items, ...props }) => {
       {items.map((item, key) => (
         <SwiperSlide key={key}>{children(item)}</SwiperSlide>
       ))}
-      <div
-        className="lg:hidden flex justify-center items-center gap-2 mt-6"
-        slot="container-end"
-      >
-        {items.map((_, key) => (
-          <SwiperControls
-            key={key}
-            activeIndex={activeIndex}
-            index={key}
-            setActiveIndex={setActiveIndex}
-          />
-        ))}
-      </div>
+      {items.length > 1 && (
+        <div slot="container-end">
+          {customSlider ? (
+            customSlider(activeIndex)
+          ) : (
+            <div className="lg:hidden flex justify-center items-center gap-2 mt-6">
+              {items.map((_, key) => (
+                <SwiperControls
+                  key={key}
+                  activeIndex={activeIndex}
+                  index={key}
+                  setActiveIndex={setActiveIndex}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      )}
     </ReactSwiper>
   );
 };
