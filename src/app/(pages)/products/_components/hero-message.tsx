@@ -8,7 +8,7 @@ export const HeroMessage: FC<HeroMessageProps> = ({ ...props }) => {
       {...props}
       className={`${props.className} hero-message self-stretch text-primary-white text-mobile-b1-400 md:text-desktop-b1-400 text-center lg:text-left`}
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Meticulously select the finest wood material, ensuring that each pellet is made from sustainably sourced and efficient energy output.
     </p>
   );
 };

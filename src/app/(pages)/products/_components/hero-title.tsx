@@ -8,7 +8,7 @@ export const HeroTitle: FC<HeroTitleProps> = ({ ...props }) => {
       {...props}
       className={`${props.className} hero-title self-stretch text-primary-white text-mobile-h1-700 md:text-desktop-h1-700 text-center lg:text-left`}
     >
-      Lorem ipsum dolor sit amet.
+      Fueling excellence with quality wood pellets
     </h1>
   );
 };
