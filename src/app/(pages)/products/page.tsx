@@ -11,10 +11,10 @@ export default function ProductsPage() {
   return (
     <Fragment>
       <HeroSection />
-      <ProductSection />
+      <ProductSection key={"shared-3"} />
       <ProductionSection />
-      <ClientSection />
-      <CtaSection />
+      <ClientSection key={"shared-1"} />
+      <CtaSection key={"shared-2"} />
     </Fragment>
   );
 }

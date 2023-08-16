@@ -10,7 +10,7 @@ export default function ProductsPage() {
     <Fragment>
       <HeroSection />
       <ContactSection />
-      <ClientSection />
+      <ClientSection key={"shared-1"} />
     </Fragment>
   );
 }

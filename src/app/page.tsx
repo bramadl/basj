@@ -41,7 +41,10 @@ const QUERY = `
       benefitItems {
         id
         iconSvg {
+          alt
+          height
           url
+          width
         }
         name
         description

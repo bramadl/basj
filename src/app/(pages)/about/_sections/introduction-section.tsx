@@ -4,8 +4,6 @@ import { IntroductionVideo } from "@basj/app/(shared)/(components)/introduction-
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
-import { IntroductionTitle } from "../_components/introduction-title";
-import { IntroductionMessage } from "../_components/introduction-message";
 
 export const IntroductionSection: FC = () => {
   const { scope } = useFadeTransition(
@@ -24,8 +22,26 @@ export const IntroductionSection: FC = () => {
     >
       <IntroductionVideo className="introduction-video opacity-0" />
       <article className="introduction-article md:flex-1 flex flex-col items-start justify-center gap-6 self-stretch opacity-0">
-        <IntroductionTitle />
-        <IntroductionMessage />
+        <header className="flex flex-col gap-3">
+          <p className="uppercase self-stretch text-primary-forest-green text-mobile-h6-700 xl:text-desktop-h6-700">
+            Our Vision
+          </p>
+          <h2 className="self-stretch text-primary-dark text-mobile-h3-400 md:text-mobile-h2-400 xl:text-desktop-h2-400">
+            Leading the way in{" "}
+            <span className="text-mobile-h3-700 md:text-mobile-h2-700 xl:text-desktop-h3-700">
+              renewable energy.
+            </span>
+          </h2>
+        </header>
+        <p className="self-stretch text-primary-dark text-desktop-b1-400">
+          In the ongoing quest for sustainable energy solutions, wood pellets
+          have become a shining example of how innovation can harmonize with
+          nature&apos;s wisdom. Derived from renewable biomass sources from,
+          wood pellets offer a viable pathway toward a greener and cleaner
+          future for the generations to come. Currently, our local supply chains
+          have expanded through all over North Sumatra including Medan, Siantar,
+          Binjai, Langkat, and more.
+        </p>
       </article>
     </section>
   );

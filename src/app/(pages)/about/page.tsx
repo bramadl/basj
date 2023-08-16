@@ -6,8 +6,8 @@ import { Fragment } from "react";
 
 import { HeroSection } from "./_sections/hero-section";
 import { IntroductionSection } from "./_sections/introduction-section";
-import { BenefitSection } from "./_sections/benefit-section";
 import { MissionSection } from "./_sections/mission-section";
+import { BenefitSection } from "./_sections/benefit-section";
 import { GallerySection } from "./_sections/gallery-section";
 import { MilestoneSection } from "./_sections/milestone-section";
 
@@ -17,12 +17,12 @@ export default function AboutPage() {
       <HeroSection />
       <IntroductionSection />
       <MissionSection />
-      <StatisticSection />
+      <StatisticSection key={"shared-3"} />
       <BenefitSection />
       <GallerySection />
       <MilestoneSection />
-      <ClientSection />
-      <CtaSection />
+      <ClientSection key={"shared-1"} />
+      <CtaSection key={"shared-2"} />
     </Fragment>
   );
 }

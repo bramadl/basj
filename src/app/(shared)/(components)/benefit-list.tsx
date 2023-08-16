@@ -10,7 +10,10 @@ interface BenefitListProps {
   items: {
     id: string;
     iconSvg: {
+      alt: string;
+      height: number;
       url: string;
+      width: number;
     };
     name: string;
     description: string;
@@ -25,7 +28,7 @@ export const BenefitList: FC<BenefitListProps> = ({ items }) => {
           key={benefit.id}
           className="benefit-card opacity-0"
           description={benefit.description}
-          image={index === 0 ? EnergySVG : index === 1 ? LeafSVG : MoneySVG}
+          image={benefit.iconSvg}
           title={benefit.name}
         />
       ))}
