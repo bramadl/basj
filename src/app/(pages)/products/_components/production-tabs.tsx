@@ -9,9 +9,16 @@ interface TabItemProps {
 
 interface ProductionTabsProps {
   currentTab: number;
+  tabs: {
+    number: string;
+    tab: string;
+  }[];
 }
 
-export const ProductionTabs: FC<ProductionTabsProps> = ({ currentTab }) => {
+export const ProductionTabs: FC<ProductionTabsProps> = ({
+  currentTab,
+  tabs,
+}) => {
   const BorderLine: FC = () => {
     return (
       <div className="absolute z-0 left-0 bottom-0 w-full h-px border-b border-shades-gray-30" />
@@ -44,23 +51,14 @@ export const ProductionTabs: FC<ProductionTabsProps> = ({ currentTab }) => {
 
   return (
     <Tab.List className="relative hidden lg:flex items-start justify-between px-8 md:px-[120px] xl:px-[160px] self-stretch">
-      <TabItem isActive={currentTab === 0} number={"01"} label="Material" />
-      <TabItem isActive={currentTab === 1} number={"02"} label="Chipping" />
-      <TabItem
-        isActive={currentTab === 2}
-        number={"03"}
-        label="Secondary Drying"
-      />
-      <TabItem
-        isActive={currentTab === 3}
-        number={"04"}
-        label="Milling & Quality Control"
-      />
-      <TabItem
-        isActive={currentTab === 4}
-        number={"05"}
-        label="Packaging & Shipping"
-      />
+      {tabs.map((tab, index) => (
+        <TabItem
+          key={index}
+          isActive={currentTab === index}
+          number={tab.number}
+          label={tab.tab}
+        />
+      ))}
       <BorderLine />
     </Tab.List>
   );

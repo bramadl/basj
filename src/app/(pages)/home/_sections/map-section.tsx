@@ -1,6 +1,5 @@
 "use client";
 
-import MapPNG from "@basj/assets/images/png/map.png";
 import { Text } from "@basj/components/core/text/Text";
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
@@ -56,7 +55,13 @@ export const MapSection: FC<MapSectionProps> = ({ message, title }) => {
       </div>
       <Divider />
       <div className="lg:flex-1 w-full lg:w-auto">
-        <Image alt="map" className="map-image" src={MapPNG} width={560} />
+        <Image
+          alt="map"
+          className="map-image"
+          src={"https://www.datocms-assets.com/105182/1692153252-map.png"}
+          width={560}
+          height={640}
+        />
       </div>
     </section>
   );

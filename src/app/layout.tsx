@@ -7,8 +7,10 @@ import { Navigation } from "@basj/components/partials/navigation/Navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkah Agung Semesta Jaya",
-  description: "Hello world.",
+  title:
+    "PT Berkah Agung Semesta Jaya | Producing Wood Pellets for a Greener Future",
+  description:
+    "PT Berkah Agung Semesta Jaya (BASJ) is a leading producer of wood pellets in North Sumatra that is committed to providing sustainable energy solutions that are good for the environment and the economy.",
 };
 
 export default function RootLayout({

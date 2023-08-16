@@ -25,7 +25,7 @@ export const BenefitSection: FC<BenefitSectionProps> = ({
       listItems: ".benefit-card",
       callout: ".benefit-callout",
     },
-    { staggerDelay: "-0.4", whenInView: true }
+    { staggerDelay: "-0.6", whenInView: true }
   );
 
   return (

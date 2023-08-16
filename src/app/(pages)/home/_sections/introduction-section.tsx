@@ -13,12 +13,21 @@ interface IntroductionSectionProps {
   button: string;
   message: StructuredTextDocument;
   title: StructuredTextDocument;
+  video: {
+    thumbnail: {
+      alt: string;
+      url: string;
+      width: number;
+      height: number;
+    };
+  };
 }
 
 export const IntroductionSection: FC<IntroductionSectionProps> = ({
   button,
   message,
   title,
+  video,
 }) => {
   const { scope } = useFadeTransition(
     {
@@ -36,7 +45,7 @@ export const IntroductionSection: FC<IntroductionSectionProps> = ({
       id="introduction"
       className="flex flex-col lg:flex-row items-start md:items-center justify-center md:justify-between gap-12 md:gap-20 xl:gap-[120px] self-stretch md:self-auto py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] bg-white"
     >
-      <IntroductionVideo className="introduction-video opacity-0" />
+      <IntroductionVideo className="introduction-video opacity-0" video={video} />
       <article className="md:flex-1 flex flex-col items-start justify-center gap-6 self-stretch">
         <Text
           classNames={{

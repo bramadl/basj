@@ -3,7 +3,12 @@ import { BaseHTMLAttributes, FC } from "react";
 
 interface ProductCardProps extends BaseHTMLAttributes<HTMLDivElement> {
   caption: string;
-  image: any;
+  image: {
+    alt: string;
+    height: number;
+    url: string;
+    width: number;
+  };
 }
 
 export const ProductCard: FC<ProductCardProps> = ({
@@ -15,10 +20,11 @@ export const ProductCard: FC<ProductCardProps> = ({
     <div {...props} className={`${props.className} relative w-full`}>
       <figure className="relative w-full h-full overflow-hidden rounded-[20px] group">
         <Image
-          alt="image"
-          className="object-cover group-hover:scale-125 rounded-[20px] transition-transform ease-out duration-300"
-          fill
-          src={image}
+          alt={image.alt}
+          className="w-full h-full object-cover group-hover:scale-110 rounded-[20px] transition-transform ease-out duration-300"
+          height={image.height}
+          src={image.url}
+          width={image.width}
         />
         <div
           className="absolute left-0 top-0 inset-0"
