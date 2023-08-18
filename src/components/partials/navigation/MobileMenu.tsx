@@ -51,6 +51,7 @@ export const MobileMenu: FC = () => {
                     <Link
                       className="flex items-center justify-between py-4 px-8 text-mobile-b1-400 text-primary-dark"
                       href={{ pathname: link.href }}
+                      onClick={closeMenu}
                     >
                       {link.label}
                       <i className="bx bx-sm bx-right-arrow-alt text-shades-gray-40" />

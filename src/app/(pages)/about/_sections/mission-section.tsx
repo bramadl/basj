@@ -41,7 +41,7 @@ export const MissionSection: FC<MissionSectionProps> = ({
       divider: ".divider",
       thumbnail: ".mission-thumbnail",
     },
-    { staggerDelay: "-0.6", whenInView: true }
+    { staggerDelay: "-0.8", whenInView: true }
   );
 
   return (
@@ -67,8 +67,10 @@ export const MissionSection: FC<MissionSectionProps> = ({
         </div>
         <div className="divider opacity-0 w-full lg:w-px h-px lg:h-auto lg:self-stretch bg-shades-gray-40" />
         <DatoImage
-          className="mission-thumbnail opacity-0 rounded-full w-full aspect-square xl:w-full xl:h-full"
+          className="mission-thumbnail opacity-0 relative rounded-full w-full aspect-square xl:w-full xl:h-full object-cover"
           data={thumbnail.responsiveImage}
+          objectFit="cover"
+          objectPosition="center"
         />
       </section>
     </section>

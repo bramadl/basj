@@ -47,9 +47,6 @@ export const ClientSection: FC<ClientSectionProps> = ({ content }) => {
           }}
           data={content.message}
         />
-        <div className="client-button opacity-0 self-stretch lg:hidden">
-          <Button icon>View certificate</Button>
-        </div>
       </div>
       <div className="flex flex-col items-start gap-10">
         <div className="flex items-center justify-center gap-x-14 gap-y-8 flex-wrap">
@@ -61,7 +58,7 @@ export const ClientSection: FC<ClientSectionProps> = ({ content }) => {
             />
           ))}
         </div>
-        <div className="client-certificate opacity-0 hidden lg:flex py-6 px-8 gap-6 justify-between items-center self-stretch rounded-xl border border-shades-gray-20 bg-shades-gray-10">
+        <div className="client-certificate opacity-0 flex flex-col lg:flex-row py-6 px-8 gap-6 justify-between items-start lg:items-center self-stretch rounded-xl border border-shades-gray-20 bg-shades-gray-10">
           {content.clientCertificates.map((certificate: any) => (
             <Link
               key={certificate.id}

@@ -164,8 +164,10 @@ export const ProductionContents: FC<ProductionContentsProps> = ({
           >
             {(image) => (
               <DatoImage
-                className="w-full aspect-square lg:h-[480px] object-cover rounded-xl"
+                className="relative w-full aspect-square lg:h-[480px] rounded-xl"
                 data={image}
+                objectFit="cover"
+                objectPosition="center"
               />
             )}
           </Swiper>

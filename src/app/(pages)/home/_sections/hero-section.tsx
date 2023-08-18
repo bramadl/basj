@@ -5,6 +5,7 @@ import { Text } from "@basj/components/core/text/Text";
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { FC } from "react";
 import { StructuredTextDocument } from "react-datocms";
 
@@ -57,7 +58,9 @@ export const HeroSection: FC<HeroSectionProps> = ({
           }}
           data={message}
         />
-        <Button className="hero-button opacity-0">{button}</Button>
+        <Link href={{ pathname: "products", hash: "production-section" }}>
+          <Button className="hero-button opacity-0">{button}</Button>
+        </Link>
       </article>
       <div className="absolute top-0 left-0 w-full h-full after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[linear-gradient(0deg,rgba(51,27,10,0.6)_0%,rgba(51,27,10,0.6)_100%)] overflow-hidden">
         <ReactPlayer
@@ -65,10 +68,12 @@ export const HeroSection: FC<HeroSectionProps> = ({
           loop
           muted
           playing
-          style={{ scale: 1.5 }}
           url={background.url}
           volume={0}
           width={"100%"}
+          wrapper={({ children }) => (
+            <div className="scale-[8] lg:scale-125">{children}</div>
+          )}
         />
       </div>
     </section>

@@ -16,7 +16,7 @@ interface MilestoneSwiperProps {
 
 export const MilestoneSwiper: FC<MilestoneSwiperProps> = ({ milestones }) => {
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden w-full">
       <Swiper items={milestones} slidesPerView={1} spaceBetween={32}>
         {(item) => <MilestoneTimelineCard {...item} />}
       </Swiper>

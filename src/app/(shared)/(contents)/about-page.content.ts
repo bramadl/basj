@@ -56,7 +56,7 @@ const QUERY = `
       }
       galleryTitle
       galleryImages {
-        responsiveImage(imgixParams: { fit: crop, w: 1200, h: 1200, auto: format }) {
+        responsiveImage(imgixParams: { auto: format }) {
           sizes
           src
           width

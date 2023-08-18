@@ -23,7 +23,7 @@ const QUERY = `
           name
         }
         images {
-          responsiveImage(imgixParams: { fit: clip, w: 1200, auto: format }) {
+          responsiveImage(imgixParams: { auto: format }) {
             sizes
             src
             width

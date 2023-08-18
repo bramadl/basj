@@ -18,7 +18,7 @@ export const GallerySection: FC<GallerySectionProps> = ({ images, title }) => {
       title: ".gallery-title",
       photos: ".gallery-photo",
     },
-    { staggerDelay: "-0.4", whenInView: true }
+    { staggerDelay: "-0.8", whenInView: true }
   );
 
   return (
@@ -39,8 +39,10 @@ export const GallerySection: FC<GallerySectionProps> = ({ images, title }) => {
             } rounded-xl overflow-hidden`}
           >
             <DatoImage
-              className="gallery-photo opacity-0 w-full aspect-square object-cover rounded-xl hover:scale-110 transition-transform ease-out duration-300"
+              className="gallery-photo opacity-0 relative w-full aspect-square rounded-xl hover:scale-110 transition-transform ease-out duration-300"
               data={image.responsiveImage}
+              objectFit="cover"
+              objectPosition="center"
             />
           </div>
         ))}
