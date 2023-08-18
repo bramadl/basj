@@ -154,7 +154,7 @@ export const ProductionContents: FC<ProductionContentsProps> = ({
 
     return (
       <Tab.Panel className="relative flex lg:block flex-col justify-center items-center gap-6 self-stretch">
-        <div className="relative lg:w-[640px] lg:h-[480px]">
+        <div className="relative w-full lg:w-[640px] lg:h-[480px]">
           <Swiper
             customSlider={(activeIndex) => (
               <ImageSlider activeIndex={activeIndex} />
