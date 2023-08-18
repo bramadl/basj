@@ -5,6 +5,7 @@ import { Text } from "@basj/components/core/text/Text";
 import { Button } from "@basj/components/core/button/Button";
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
+import Link from "next/link";
 import { FC } from "react";
 import { ResponsiveImageType, StructuredTextDocument } from "react-datocms";
 
@@ -59,9 +60,11 @@ export const IntroductionSection: FC<IntroductionSectionProps> = ({
           }}
           data={message}
         />
-        <Button className="introduction-button opacity-0" icon>
-          {button}
-        </Button>
+        <Link href={{ pathname: "products", hash: "production-section" }}>
+          <Button className="introduction-button opacity-0" icon>
+            {button}
+          </Button>
+        </Link>
       </article>
     </section>
   );

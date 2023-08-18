@@ -33,7 +33,7 @@ export const MilestoneTimelineStep: FC<MilestoneTimelineStepProps> = ({
       <div
         className={`w-7 h-7 rounded-full border transition-all ease-out duration-300 ${
           isActive
-            ? "border-primary-bold-amber bg-primary-light-amber"
+            ? "border-primary-forest-green bg-primary-light-forest-green"
             : "border-shades-gray-50 bg-shades-gray-20"
         }`}
       />
@@ -44,7 +44,7 @@ export const MilestoneTimelineStep: FC<MilestoneTimelineStepProps> = ({
     return (
       <div
         className={`absolute w-px h-[240px] left-1/2 -translate-x-1/2 transition-all ease-out duration-300 ${
-          isActive ? "bg-primary-bold-amber" : "bg-shades-gray-40"
+          isActive ? "bg-primary-forest-green" : "bg-shades-gray-40"
         }`}
       />
     );
@@ -58,7 +58,7 @@ export const MilestoneTimelineStep: FC<MilestoneTimelineStepProps> = ({
     <article ref={step} className="flex w-full items-center gap-[72px]">
       <p
         className={`w-[108px] flex-shrink-0 ${
-          isActive ? "text-primary-bold-amber" : "text-shades-gray-40"
+          isActive ? "text-primary-forest-green" : "text-shades-gray-40"
         } text-desktop-p-700 transition-all ease-out duration-300`}
       >
         {year}

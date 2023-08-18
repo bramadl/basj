@@ -50,9 +50,9 @@ export const IntroductionSection: FC<IntroductionSectionProps> = ({
           <Text
             classNames={{
               heading:
-                "self-stretch text-primary-dark text-mobile-h3-400 md:text-mobile-h2-400 xl:text-desktop-h2-400",
+                "self-stretch text-primary-dark text-mobile-h3-400 md:text-mobile-h3-400 xl:text-desktop-h3-400",
               strong:
-                "text-mobile-h3-700 md:text-mobile-h2-700 xl:text-desktop-h3-700",
+                "text-mobile-h3-700 md:text-mobile-h3-700 xl:text-desktop-h3-700",
             }}
             data={title}
           />
