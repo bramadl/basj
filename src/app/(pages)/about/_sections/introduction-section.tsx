@@ -5,7 +5,7 @@ import { Text } from "@basj/components/core/text/Text";
 import { useFadeTransition } from "@basj/hooks/useFadeTransition";
 
 import { FC } from "react";
-import { StructuredTextDocument } from "react-datocms";
+import { ResponsiveImageType, StructuredTextDocument } from "react-datocms";
 
 interface IntroductionSectionProps {
   tag: string;
@@ -13,10 +13,7 @@ interface IntroductionSectionProps {
   message: StructuredTextDocument;
   video: {
     thumbnail: {
-      alt: string;
-      url: string;
-      width: number;
-      height: number;
+      responsiveImage: ResponsiveImageType;
     };
   };
 }
