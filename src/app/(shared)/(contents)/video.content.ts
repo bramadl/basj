@@ -4,10 +4,15 @@ const VIDEO_QUERY = `
   query CompanyProfileVideo {
     companyProfile: companyProfileSection {
       thumbnail: videoThumbnail {
-        alt
-        url
-        width
-        height
+        responsiveImage(imgixParams: { auto: format }) {
+          sizes
+          src
+          width
+          height
+          alt
+          title
+          base64
+        }
       }
     }
   }

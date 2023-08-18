@@ -1,14 +1,9 @@
-import Image from "next/image";
 import { BaseHTMLAttributes, FC } from "react";
+import { Image as DatoImage, ResponsiveImageType } from "react-datocms";
 
 interface ProductCardProps extends BaseHTMLAttributes<HTMLDivElement> {
   caption: string;
-  image: {
-    alt: string;
-    height: number;
-    url: string;
-    width: number;
-  };
+  image: ResponsiveImageType;
 }
 
 export const ProductCard: FC<ProductCardProps> = ({
@@ -19,12 +14,11 @@ export const ProductCard: FC<ProductCardProps> = ({
   return (
     <div {...props} className={`${props.className} relative w-full`}>
       <figure className="relative w-full h-full overflow-hidden rounded-[20px] group">
-        <Image
-          alt={image.alt}
+        <DatoImage
           className="w-full h-full object-cover group-hover:scale-110 rounded-[20px] transition-transform ease-out duration-300"
-          height={image.height}
-          src={image.url}
-          width={image.width}
+          data={image}
+          objectFit="cover"
+          objectPosition="center"
         />
         <div
           className="absolute left-0 top-0 inset-0"

@@ -7,10 +7,15 @@ const PRODUCT_QUERY = `
         value
       }
       thumbnail {
-        alt
-        height
-        url
-        width
+        responsiveImage(imgixParams: { auto: format }) {
+          sizes
+          src
+          width
+          height
+          alt
+          title
+          base64
+        }
       }
       thumbnailName
       subtitle
@@ -18,10 +23,15 @@ const PRODUCT_QUERY = `
         id
         name
         picture {
-          alt
-          height
-          url
-          width
+          responsiveImage(imgixParams: { auto: format }) {
+            sizes
+            src
+            width
+            height
+            alt
+            title
+            base64
+          }
         }
       }
     }

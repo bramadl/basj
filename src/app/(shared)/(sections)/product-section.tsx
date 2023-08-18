@@ -6,17 +6,14 @@ import { FC } from "react";
 
 import { ProductCard } from "../(components)/product-card";
 import { Swiper } from "@basj/components/core/swiper/Swiper";
-import { StructuredTextDocument } from "react-datocms";
+import { ResponsiveImageType, StructuredTextDocument } from "react-datocms";
 import { Text } from "@basj/components/core/text/Text";
 
 interface Product {
   id: string;
   name: string;
   picture: {
-    alt: string;
-    height: number;
-    url: string;
-    width: number;
+    responsiveImage: ResponsiveImageType;
   };
 }
 
@@ -24,10 +21,7 @@ interface ProductSectionProps {
   content: {
     title: StructuredTextDocument;
     thumbnail: {
-      alt: string;
-      height: number;
-      url: string;
-      width: number;
+      responsiveImage: ResponsiveImageType;
     };
     thumbnailName: string;
     subtitle: string;
@@ -66,7 +60,7 @@ export const ProductSection: FC<ProductSectionProps> = ({ content }) => {
           <ProductCard
             caption={content.thumbnailName}
             className="h-[352px]"
-            image={content.thumbnail}
+            image={content.thumbnail.responsiveImage}
           />
         </div>
       </div>
@@ -93,7 +87,7 @@ export const ProductSection: FC<ProductSectionProps> = ({ content }) => {
             <ProductCard
               caption={product.name}
               className="product-card opacity-0 h-[239px]"
-              image={product.picture}
+              image={product.picture.responsiveImage}
             />
           )}
         </Swiper>
