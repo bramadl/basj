@@ -53,8 +53,10 @@ export const ClientSection: FC<ClientSectionProps> = ({ content }) => {
           {content.clientList.map((client) => (
             <DatoImage
               key={client.id}
-              className="client-list-image opacity-0 object-cover grayscale"
+              className="client-list-image opacity-0 grayscale"
               data={client.logo.responsiveImage}
+              objectFit="cover"
+              objectPosition="center"
             />
           ))}
         </div>
