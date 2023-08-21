@@ -21,6 +21,7 @@ export default async function ProductsPage() {
       <ContactSection
         title={contact.contactTitle}
         description={contact.contactDescription}
+        contacts={contact.contacts}
       />
       <ClientSection content={client} />
     </Fragment>
