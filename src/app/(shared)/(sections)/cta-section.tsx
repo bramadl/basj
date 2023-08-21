@@ -34,7 +34,7 @@ export const CtaSection: FC<CtaSectionProps> = ({ content }) => {
       id="cta"
       className="flex py-[72px] md:py-20 xl:py-[100px] px-8 md:px-[120px] xl:px-[160px] flex-col justify-center items-center self-stretch"
       style={{
-        background: `url(${content.background.url}) center center/cover`,
+        background: `url(${content.background.url}) fixed center center/cover`,
       }}
     >
       <div className="flex py-10 md:py-20 px-8 md:px-[120px] xl:px-[200px] flex-col justify-center items-center gap-6 md:gap-7 self-stretch md:self-auto rounded-[20px] md:rounded-[40px] bg-[rgba(176,93,36,0.40)] backdrop-blur-[5px] text-primary-white">
