@@ -61,8 +61,8 @@ export const ContactSection: FC<ContactSectionProps> = ({
               )}
             </VideoPlayer>
             <Link
-              download
-              href="https://www.datocms-assets.com/105182/1692328940-pt-basj.pdf"
+              download="PT. BASJ Company Profile"
+              href="/pdfs/pt_basj_company_profile.pdf"
               target="_blank"
             >
               <Button icon>Read</Button>
