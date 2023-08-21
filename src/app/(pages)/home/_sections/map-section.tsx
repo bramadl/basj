@@ -58,7 +58,7 @@ export const MapSection: FC<MapSectionProps> = ({ message, title }) => {
         <Image
           alt="map"
           className="map-image"
-          src={"https://www.datocms-assets.com/105182/1692153252-map.png"}
+          src={"/images/png/map.png"}
           width={560}
           height={640}
         />
