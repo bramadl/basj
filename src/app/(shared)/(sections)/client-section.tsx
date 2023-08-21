@@ -20,6 +20,7 @@ export const ClientSection: FC<ClientSectionProps> = ({ content }) => {
       description: ".client-description",
       certificates: ".client-certificate",
       images: ".client-list-image",
+      certificatesMobile: ".client-certificate-mobile",
     },
     { staggerDelay: "-0.8", whenInView: true }
   );
@@ -46,7 +47,7 @@ export const ClientSection: FC<ClientSectionProps> = ({ content }) => {
           }}
           data={content.message}
         />
-        <div className="client-certificate opacity-0 flex flex-col lg:flex-row py-6 px-8 gap-6 justify-between items-start lg:items-center self-stretch rounded-xl border border-shades-gray-20 bg-shades-gray-10">
+        <div className="client-certificate opacity-0 hidden lg:flex flex-col lg:flex-row py-6 px-8 gap-6 justify-between items-start lg:items-center self-stretch rounded-xl border border-shades-gray-20 bg-shades-gray-10">
           {content.clientCertificates.map((certificate: any) => (
             <Link
               key={certificate.id}
@@ -60,7 +61,7 @@ export const ClientSection: FC<ClientSectionProps> = ({ content }) => {
         </div>
       </div>
       <div className="flex flex-col items-start gap-10">
-        <div className="flex items-center justify-center gap-x-14 gap-y-8 flex-wrap">
+        <div className="grid grid-cols-2 items-end justify-end place-items-end place-content-end gap-x-14 gap-y-8 flex-wrap">
           {content.clientList.map((client) => (
             <DatoImage
               key={client.id}
@@ -69,6 +70,18 @@ export const ClientSection: FC<ClientSectionProps> = ({ content }) => {
               objectFit="cover"
               objectPosition="center"
             />
+          ))}
+        </div>
+        <div className="client-certificate-mobile opacity-0 lg:hidden flex flex-col lg:flex-row py-6 px-8 gap-6 justify-between items-start lg:items-center self-stretch rounded-xl border border-shades-gray-20 bg-shades-gray-10">
+          {content.clientCertificates.map((certificate: any) => (
+            <Link
+              key={certificate.id}
+              download={certificate.certificateUrl.filename}
+              href={certificate.certificateUrl.url}
+              target="_blank"
+            >
+              <Button className="whitespace-nowrap" icon>{certificate.name}</Button>
+            </Link>
           ))}
         </div>
       </div>
