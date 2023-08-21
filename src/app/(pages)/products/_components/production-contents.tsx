@@ -164,7 +164,7 @@ export const ProductionContents: FC<ProductionContentsProps> = ({
           >
             {(image) => (
               <DatoImage
-                className="relative w-full aspect-square lg:h-[480px] rounded-xl"
+                className="relative w-full aspect-square lg:h-[480px] rounded-xl bg-primary-light-forest-green"
                 data={image}
                 objectFit="cover"
                 objectPosition="center"
