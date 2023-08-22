@@ -66,7 +66,7 @@ export const ContactSection: FC<ContactSectionProps> = ({
               )}
             </VideoPlayer>
             <Link
-              download="PT. BASJ Company Profile"
+              title="PT. BASJ Company Profile"
               href="/pdfs/pt_basj_company_profile.pdf"
               target="_blank"
             >

@@ -51,7 +51,7 @@ export const ClientSection: FC<ClientSectionProps> = ({ content }) => {
           {content.clientCertificates.map((certificate: any) => (
             <Link
               key={certificate.id}
-              download={certificate.certificateUrl.filename}
+              title={certificate.certificateUrl.filename}
               href={certificate.certificateUrl.url}
               target="_blank"
             >
@@ -76,7 +76,7 @@ export const ClientSection: FC<ClientSectionProps> = ({ content }) => {
           {content.clientCertificates.map((certificate: any) => (
             <Link
               key={certificate.id}
-              download={certificate.certificateUrl.filename}
+              title={certificate.certificateUrl.filename}
               href={certificate.certificateUrl.url}
               target="_blank"
             >
