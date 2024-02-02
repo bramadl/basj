@@ -91,7 +91,7 @@ export const ContactSection: FC<ContactSectionProps> = ({
           href={{
             protocol: "https",
             hostname: "wa.me",
-            pathname: contacts.whatsappNumber,
+            pathname: contacts?.whatsappNumber,
           }}
           target="_blank"
         >
@@ -102,7 +102,7 @@ export const ContactSection: FC<ContactSectionProps> = ({
         </Link>
         <Link
           className="self-stretch w-full"
-          href={{ protocol: "mailto", hostname: contacts.emailAddress }}
+          href={{ protocol: "mailto", hostname: contacts?.emailAddress }}
         >
           <button className="contact-information--button opacity-0 flex py-4 px-0 justify-center items-center gap-2.5 w-full rounded-xl border border-primary-white bg-transparent text-primary-white">
             <i className="bx bx-sm bx-envelope " />
