@@ -77,7 +77,7 @@ export const getContactPageContent = async () => {
       contactDescription:
         "We are glad to have joined forces with industry partners from Indonesia, Japan, and Korea. Looking forward to cooperate with more.",
       contacts: {
-        whatsappNumber: "6285360828888",
+        whatsappNumber: "6282164314585",
         emailAddress: "berkahagung.sj@yahoo.com",
       },
     },
