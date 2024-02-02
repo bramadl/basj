@@ -24,7 +24,7 @@ const QUERY = `
 
 export const getContactPageContent = async () => {
   const response = await performRequest({ query: QUERY });
-  if (response) return { contact: response.contact };
+  if (response) return { contact: response };
 
   return {
     contact: {

@@ -14,13 +14,13 @@ export default async function ProductsPage() {
   return (
     <Fragment>
       <HeroSection
-        background={contact.heroBackground}
-        title={contact.heroTitle}
-        message={contact.heroMessage}
+        background={contact.contact.heroBackground}
+        title={contact.contact.heroTitle}
+        message={contact.contact.heroMessage}
       />
       <ContactSection
-        title={contact.contactTitle}
-        description={contact.contactDescription}
+        title={contact.contact.contactTitle}
+        description={contact.contact.contactDescription}
         contacts={contact.contacts}
       />
       <ClientSection content={client} />
