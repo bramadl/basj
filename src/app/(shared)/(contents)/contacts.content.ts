@@ -19,7 +19,7 @@ export const getContactContent = async () => {
       whatsappNumber: "6285360828888",
       emailAddress: "berkahagung.sj@yahoo.com",
       officeAddress:
-        "Jl. Soekarno-Hatta No.1, DUSUN II PAYA PASIR, TEBING SYAHBANDAR, KAB. SERDANG BEDAGAI, SUMATERA UTARA",
+        "Jl. Soekarno-Hatta No.1, Dusun II Paya Pasir, Tebing Syahbandar, Kab. Serdang Bedagai, Sumatera Utara",
     },
   };
 };
