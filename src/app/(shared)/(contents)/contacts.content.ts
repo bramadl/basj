@@ -18,7 +18,7 @@ export const getContactContent = async () => {
     contact: {
       whatsappNumber: "6285360828888",
       emailAddress: "berkahagung.sj@yahoo.com",
-      officeAddress: "JI. Jalinsum No. 01 Tambangan, Kab. Sergai, Paya Pasir, Medan Marelan, Kota Medan, Sumatera Utara 20998",
+      officeAddress: "Jl. Soekarno-Hatta No.1, Dusun II Paya Pasir, Tebing Syahbandar, Kab. Serdang Bedagai, Sumatera Utara",
     },
   };
 };
